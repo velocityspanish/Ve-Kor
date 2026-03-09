@@ -29,7 +29,37 @@
       "korean": "다시 말씀해 주세요, 조금 천천히.",
       "category": "Basic Phrases",
       "generated_at": "2026-03-09T05:12:56.431310"
+    },
+    {
+      "english": "Take your time, there's no need to rush",
+      "korean": "천천히 하세요, 서두를 필요 없어요",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-09T17:14:11.285231"
+    },
+    {
+      "english": "That's great, I'm really happy for you",
+      "korean": "정말 잘됐네요, 진심으로 기쁘네요",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-09T17:14:11.285240"
+    },
+    {
+      "english": "I'm sorry, that was my mistake, really",
+      "korean": "죄송해요, 제 잘못이에요, 정말이에요",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-09T17:14:11.285241"
+    },
+    {
+      "english": "Could you please help me with this?",
+      "korean": "이거 좀 도와줄 수 있어요, 부탁드려요",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-09T17:14:11.285243"
+    },
+    {
+      "english": "No problem, don't worry, I'll handle it",
+      "korean": "괜찮아요, 걱정 마세요, 제가 처리할게요",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-09T17:14:11.285244"
     }
   ],
-  "last_updated": "2026-03-09T05:12:56.431312"
+  "last_updated": "2026-03-09T17:14:11.285245"
 }
