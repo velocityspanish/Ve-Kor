@@ -1,0 +1,35 @@
+{
+  "phrases": [
+    {
+      "english": "Hello, how are you?",
+      "korean": "안녕하세요, 잘 지내세요?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-09T05:12:56.431299"
+    },
+    {
+      "english": "Good morning, did you sleep well?",
+      "korean": "좋은 아침이에요, 잘 주무셨어요?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-09T05:12:56.431306"
+    },
+    {
+      "english": "Excuse me, where is the restroom?",
+      "korean": "실례합니다, 화장실이 어디예요?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-09T05:12:56.431308"
+    },
+    {
+      "english": "How much is this, please?",
+      "korean": "이거 얼마예요, 알려 주세요?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-09T05:12:56.431309"
+    },
+    {
+      "english": "Can you repeat, a little slower?",
+      "korean": "다시 말씀해 주세요, 조금 천천히.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-09T05:12:56.431310"
+    }
+  ],
+  "last_updated": "2026-03-09T05:12:56.431312"
+}
