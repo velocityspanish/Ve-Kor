@@ -149,7 +149,37 @@
       "korean": "자신에게 친절해, 계속 배워",
       "category": "Self Improvement",
       "generated_at": "2026-03-10T17:10:35.123572"
+    },
+    {
+      "english": "I've got you, always",
+      "korean": "항상, 네 편이야",
+      "category": "Friendship",
+      "generated_at": "2026-03-10T19:27:59.186291"
+    },
+    {
+      "english": "Call me, any time",
+      "korean": "언제든, 전화해",
+      "category": "Friendship",
+      "generated_at": "2026-03-10T19:27:59.186300"
+    },
+    {
+      "english": "Let's grab coffee, later",
+      "korean": "나중에, 커피 마시자",
+      "category": "Friendship",
+      "generated_at": "2026-03-10T19:27:59.186301"
+    },
+    {
+      "english": "You make me laugh, always",
+      "korean": "너는 항상, 날 웃게 해",
+      "category": "Friendship",
+      "generated_at": "2026-03-10T19:27:59.186302"
+    },
+    {
+      "english": "Through thick, and thin",
+      "korean": "좋을 때나, 힘들 때나",
+      "category": "Friendship",
+      "generated_at": "2026-03-10T19:27:59.186303"
     }
   ],
-  "last_updated": "2026-03-10T17:10:35.123574"
+  "last_updated": "2026-03-10T19:27:59.186305"
 }
