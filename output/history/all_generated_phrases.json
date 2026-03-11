@@ -239,7 +239,37 @@
       "korean": "조용히, 자신을 용서하고, 부드럽게 앞으로 가",
       "category": "Inner Peace",
       "generated_at": "2026-03-11T05:03:30.065897"
+    },
+    {
+      "english": "Hi there, good to see you",
+      "korean": "안녕하세요, 만나서 반가워요",
+      "category": "Greetings",
+      "generated_at": "2026-03-11T16:37:02.761456"
+    },
+    {
+      "english": "Hey, how's your day going?",
+      "korean": "안녕, 오늘 하루 어때요?",
+      "category": "Greetings",
+      "generated_at": "2026-03-11T16:37:02.761465"
+    },
+    {
+      "english": "Long time no see, how have you been?",
+      "korean": "오랜만이에요, 잘 지내셨어요?",
+      "category": "Greetings",
+      "generated_at": "2026-03-11T16:37:02.761467"
+    },
+    {
+      "english": "Welcome back, I've missed you",
+      "korean": "다시 오신 걸 환영해요, 보고 싶었어요",
+      "category": "Greetings",
+      "generated_at": "2026-03-11T16:37:02.761468"
+    },
+    {
+      "english": "Nice to meet you, I'm glad you're here",
+      "korean": "처음 뵙겠습니다, 만나서 반갑습니다",
+      "category": "Greetings",
+      "generated_at": "2026-03-11T16:37:02.761469"
     }
   ],
-  "last_updated": "2026-03-11T05:03:30.065899"
+  "last_updated": "2026-03-11T16:37:02.761474"
 }
