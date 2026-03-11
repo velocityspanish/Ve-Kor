@@ -269,7 +269,37 @@
       "korean": "처음 뵙겠습니다, 만나서 반갑습니다",
       "category": "Greetings",
       "generated_at": "2026-03-11T16:37:02.761469"
+    },
+    {
+      "english": "Start now, success will come",
+      "korean": "지금 시작해, 성공은 온다",
+      "category": "Success",
+      "generated_at": "2026-03-11T19:37:04.051278"
+    },
+    {
+      "english": "One step daily, reach your goal",
+      "korean": "하루 한 걸음씩, 목표에 가까워져",
+      "category": "Success",
+      "generated_at": "2026-03-11T19:37:04.051287"
+    },
+    {
+      "english": "Keep going, progress adds up",
+      "korean": "계속해, 진전이 쌓여",
+      "category": "Success",
+      "generated_at": "2026-03-11T19:37:04.051288"
+    },
+    {
+      "english": "Learn, adapt, then succeed",
+      "korean": "배우고, 적응해, 성공해",
+      "category": "Success",
+      "generated_at": "2026-03-11T19:37:04.051290"
+    },
+    {
+      "english": "Focus today, celebrate tomorrow",
+      "korean": "오늘 집중해, 내일 축하해",
+      "category": "Success",
+      "generated_at": "2026-03-11T19:37:04.051291"
     }
   ],
-  "last_updated": "2026-03-11T16:37:02.761474"
+  "last_updated": "2026-03-11T19:37:04.051292"
 }
