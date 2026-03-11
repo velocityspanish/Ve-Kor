@@ -299,7 +299,37 @@
       "korean": "오늘 집중해, 내일 축하해",
       "category": "Success",
       "generated_at": "2026-03-11T19:37:04.051291"
+    },
+    {
+      "english": "I'm here, to learn Korean",
+      "korean": "한국어, 배우러 왔어요",
+      "category": "Purpose",
+      "generated_at": "2026-03-11T21:05:22.509727"
+    },
+    {
+      "english": "I study, to speak with locals",
+      "korean": "사람들과, 말하려고 공부해요",
+      "category": "Purpose",
+      "generated_at": "2026-03-11T21:05:22.509734"
+    },
+    {
+      "english": "I practice, to sound more natural",
+      "korean": "더 자연스럽게, 말하려고 연습해요",
+      "category": "Purpose",
+      "generated_at": "2026-03-11T21:05:22.509736"
+    },
+    {
+      "english": "I save money, to travel in Korea",
+      "korean": "한국 여행하려고, 돈을 모아요",
+      "category": "Purpose",
+      "generated_at": "2026-03-11T21:05:22.509738"
+    },
+    {
+      "english": "I study grammar, to write better",
+      "korean": "더 잘 쓰려고, 문법을 공부해요",
+      "category": "Purpose",
+      "generated_at": "2026-03-11T21:05:22.509740"
     }
   ],
-  "last_updated": "2026-03-11T19:37:04.051292"
+  "last_updated": "2026-03-11T21:05:22.509742"
 }
