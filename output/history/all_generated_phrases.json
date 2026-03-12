@@ -329,7 +329,37 @@
       "korean": "더 잘 쓰려고, 문법을 공부해요",
       "category": "Purpose",
       "generated_at": "2026-03-11T21:05:22.509740"
+    },
+    {
+      "english": "How much is this, in total?",
+      "korean": "이거, 총 얼마예요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-12T05:08:35.551646"
+    },
+    {
+      "english": "Do you have this, in another color?",
+      "korean": "이거, 다른 색 있어요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-12T05:08:35.551655"
+    },
+    {
+      "english": "Can I try this on, please?",
+      "korean": "이거, 입어 봐도 돼요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-12T05:08:35.551657"
+    },
+    {
+      "english": "Do you accept cards, or cash?",
+      "korean": "카드 돼요, 아니면 현금?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-12T05:08:35.551658"
+    },
+    {
+      "english": "Can you gift-wrap this, please?",
+      "korean": "이거, 선물 포장해 주세요.",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-12T05:08:35.551659"
     }
   ],
-  "last_updated": "2026-03-11T21:05:22.509742"
+  "last_updated": "2026-03-12T05:08:35.551660"
 }
