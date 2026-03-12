@@ -389,7 +389,37 @@
       "korean": "더 많이 들어, 자신감 있게 말해",
       "category": "Motivation",
       "generated_at": "2026-03-12T17:17:47.909842"
+    },
+    {
+      "english": "Thank you, you made my day",
+      "korean": "고마워요, 하루가 밝아졌어요",
+      "category": "Gratitude",
+      "generated_at": "2026-03-12T19:33:48.767103"
+    },
+    {
+      "english": "Thanks, you were a big help",
+      "korean": "도와줘서 고마워요, 큰 힘이 됐어요",
+      "category": "Gratitude",
+      "generated_at": "2026-03-12T19:33:48.767112"
+    },
+    {
+      "english": "I'm grateful, you listened to me",
+      "korean": "들어줘서 고마워요, 큰 위안이 됐어요",
+      "category": "Gratitude",
+      "generated_at": "2026-03-12T19:33:48.767114"
+    },
+    {
+      "english": "Thank you, for being here",
+      "korean": "여기 있어줘서, 고마워요",
+      "category": "Gratitude",
+      "generated_at": "2026-03-12T19:33:48.767115"
+    },
+    {
+      "english": "I appreciate it, more than you know",
+      "korean": "정말, 생각보다 더 고마워요",
+      "category": "Gratitude",
+      "generated_at": "2026-03-12T19:33:48.767117"
     }
   ],
-  "last_updated": "2026-03-12T17:17:47.909844"
+  "last_updated": "2026-03-12T19:33:48.767119"
 }
