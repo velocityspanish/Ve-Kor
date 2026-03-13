@@ -449,7 +449,37 @@
       "korean": "진정해, 마음을 가다듬어",
       "category": "Patience",
       "generated_at": "2026-03-13T16:02:34.139712"
+    },
+    {
+      "english": "Excuse me, does this go to Incheon Airport?",
+      "korean": "실례합니다, 이 버스 인천공항에 가나요?",
+      "category": "Travel Korean",
+      "generated_at": "2026-03-13T18:07:30.898338"
+    },
+    {
+      "english": "How much is the fare, per person?",
+      "korean": "요금이, 1인당 얼마예요?",
+      "category": "Travel Korean",
+      "generated_at": "2026-03-13T18:07:30.898347"
+    },
+    {
+      "english": "Can I pay, with a credit card?",
+      "korean": "신용카드로, 결제할 수 있나요?",
+      "category": "Travel Korean",
+      "generated_at": "2026-03-13T18:07:30.898349"
+    },
+    {
+      "english": "Is there a place to store luggage, here?",
+      "korean": "짐 보관할 곳, 여기 있나요?",
+      "category": "Travel Korean",
+      "generated_at": "2026-03-13T18:07:30.898350"
+    },
+    {
+      "english": "Where's platform three, for trains to Busan?",
+      "korean": "부산행 기차, 3번 승강장이 어디예요?",
+      "category": "Travel Korean",
+      "generated_at": "2026-03-13T18:07:30.898352"
     }
   ],
-  "last_updated": "2026-03-13T16:02:34.139714"
+  "last_updated": "2026-03-13T18:07:30.898354"
 }
