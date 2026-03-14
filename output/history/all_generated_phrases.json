@@ -509,7 +509,37 @@
       "korean": "눈을 감고, 오감을 열어",
       "category": "Mindfulness",
       "generated_at": "2026-03-13T21:51:32.334290"
+    },
+    {
+      "english": "Table for two, please",
+      "korean": "두 명이에요, 자리 있어요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-14T05:03:27.974061"
+    },
+    {
+      "english": "Could I see the menu, please?",
+      "korean": "메뉴판 좀, 보여 주세요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-14T05:03:27.974070"
+    },
+    {
+      "english": "I'll have the spicy ramen, please",
+      "korean": "매운 라면, 주세요",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-14T05:03:27.974072"
+    },
+    {
+      "english": "Another glass of water, please",
+      "korean": "물 한 잔, 더 주세요",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-14T05:03:27.974073"
+    },
+    {
+      "english": "Is this dish, vegetarian?",
+      "korean": "이 요리, 채식인가요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-14T05:03:27.974074"
     }
   ],
-  "last_updated": "2026-03-13T21:51:32.334292"
+  "last_updated": "2026-03-14T05:03:27.974075"
 }
