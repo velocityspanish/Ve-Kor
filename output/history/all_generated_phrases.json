@@ -899,7 +899,37 @@
       "korean": "결과만이 아니라, 노력도 축하해",
       "category": "Self Improvement",
       "generated_at": "2026-03-17T19:57:53.491537"
+    },
+    {
+      "english": "Is there a discount, for members?",
+      "korean": "회원이면, 할인돼요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-17T21:57:46.380570"
+    },
+    {
+      "english": "Do you have a smaller size, please?",
+      "korean": "더 작은 사이즈, 있어요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-17T21:57:46.380582"
+    },
+    {
+      "english": "I'll take this, could you hold it?",
+      "korean": "이거 살게요, 잠시 보관해 주세요.",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-17T21:57:46.380583"
+    },
+    {
+      "english": "Can I return this, if needed?",
+      "korean": "필요하면, 환불 가능해요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-17T21:57:46.380584"
+    },
+    {
+      "english": "Where's the fitting room, please?",
+      "korean": "탈의실, 어디에 있나요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-17T21:57:46.380585"
     }
   ],
-  "last_updated": "2026-03-17T19:57:53.491539"
+  "last_updated": "2026-03-17T21:57:46.380587"
 }
