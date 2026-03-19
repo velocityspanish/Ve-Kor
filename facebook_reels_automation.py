@@ -19,6 +19,7 @@ if sys.platform == "win32":
 load_dotenv()
 
 POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY")
+AI_MODEL = os.getenv("AI_MODEL")
 
 # Directories
 BASE_DIR = Path(__file__).parent
@@ -232,7 +233,7 @@ Return as JSON array:
 IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before."""
 
             payload = {
-                "model": "openai",
+                "model": AI_MODEL,
                 "messages": [
                     {"role": "system", "content": "You are a Korean teacher. Create short, natural phrases with pauses."},
                     {"role": "user", "content": prompt}
@@ -385,16 +386,27 @@ def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
 
 # ============== AUDIO GENERATION ==============
 
-async def generate_single_audio(text: str, voice: str, output_path: str):
-    """Generate audio using Edge TTS"""
-    try:
-        import edge_tts
-        communicate = edge_tts.Communicate(text, voice)
-        await communicate.save(output_path)
-        return True
-    except Exception as e:
-        print(f"  TTS error: {e}")
-        return False
+async def generate_single_audio(text: str, voice: str, output_path: str, max_retries: int = 3):
+    """Generate audio using Edge TTS with retry logic"""
+    import edge_tts
+    
+    for attempt in range(max_retries):
+        try:
+            communicate = edge_tts.Communicate(text, voice)
+            await communicate.save(output_path)
+            
+            # Verify audio was created
+            if Path(output_path).exists() and Path(output_path).stat().st_size > 0:
+                return True
+            
+        except Exception as e:
+            if attempt < max_retries - 1:
+                print(f"  TTS error (attempt {attempt + 1}/{max_retries}): {e} - Retrying...")
+                await asyncio.sleep(1)
+            else:
+                print(f"  TTS error (final attempt): {e}")
+    
+    return False
 
 
 def generate_all_audio(phrases: list, output_dir: str):
