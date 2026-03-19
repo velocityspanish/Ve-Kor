@@ -1019,7 +1019,37 @@
       "korean": "금방 올게요, 여기서 기다려 주세요",
       "category": "Common Expressions",
       "generated_at": "2026-03-18T21:52:15.378266"
+    },
+    {
+      "english": "I listen, to understand Korean songs",
+      "korean": "한국 노래를, 이해하려고 들어요",
+      "category": "Purpose",
+      "generated_at": "2026-03-19T05:16:04.291706"
+    },
+    {
+      "english": "I practice daily, to build confidence",
+      "korean": "자신감을 위해, 매일 연습해요",
+      "category": "Purpose",
+      "generated_at": "2026-03-19T05:16:04.291714"
+    },
+    {
+      "english": "I learn phrases, to order food easily",
+      "korean": "음식 주문하려고, 표현을 배워요",
+      "category": "Purpose",
+      "generated_at": "2026-03-19T05:16:04.291716"
+    },
+    {
+      "english": "I study, to pass the language test",
+      "korean": "언어 시험에, 합격하려고 공부해요",
+      "category": "Purpose",
+      "generated_at": "2026-03-19T05:16:04.291717"
+    },
+    {
+      "english": "I learn culture, to feel more at home",
+      "korean": "더 편하게 지내려고, 문화를 배워요",
+      "category": "Purpose",
+      "generated_at": "2026-03-19T05:16:04.291719"
     }
   ],
-  "last_updated": "2026-03-18T21:52:15.378267"
+  "last_updated": "2026-03-19T05:16:04.291720"
 }
