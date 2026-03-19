@@ -1079,7 +1079,37 @@
       "korean": "화장실 어디에요?",
       "category": "Travel Korean",
       "generated_at": "2026-03-19T11:42:00.840803"
+    },
+    {
+      "english": "So happy, right now.",
+      "korean": "너무 기뻐요, 지금.",
+      "category": "Joy",
+      "generated_at": "2026-03-19T17:38:24.615462"
+    },
+    {
+      "english": "This is wonderful, truly.",
+      "korean": "정말 멋져요, 진짜.",
+      "category": "Joy",
+      "generated_at": "2026-03-19T17:38:24.615469"
+    },
+    {
+      "english": "Feeling great, yes!",
+      "korean": "기분 최고예요, 네!",
+      "category": "Joy",
+      "generated_at": "2026-03-19T17:38:24.615470"
+    },
+    {
+      "english": "What a delight, oh my.",
+      "korean": "정말 즐거워요, 세상에.",
+      "category": "Joy",
+      "generated_at": "2026-03-19T17:38:24.615471"
+    },
+    {
+      "english": "Full of joy, today.",
+      "korean": "오늘, 행복 가득해요.",
+      "category": "Joy",
+      "generated_at": "2026-03-19T17:38:24.615472"
     }
   ],
-  "last_updated": "2026-03-19T11:42:00.840805"
+  "last_updated": "2026-03-19T17:38:24.615474"
 }
