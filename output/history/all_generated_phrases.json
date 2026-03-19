@@ -1109,7 +1109,37 @@
       "korean": "오늘, 행복 가득해요.",
       "category": "Joy",
       "generated_at": "2026-03-19T17:38:24.615472"
+    },
+    {
+      "english": "Strong mind, strong body.",
+      "korean": "굳센 마음, 굳센 몸.",
+      "category": "Strength",
+      "generated_at": "2026-03-19T19:39:07.704329"
+    },
+    {
+      "english": "Believe in yourself, always.",
+      "korean": "언제나, 자신을 믿어요.",
+      "category": "Strength",
+      "generated_at": "2026-03-19T19:39:07.704337"
+    },
+    {
+      "english": "Keep pushing, forward.",
+      "korean": "계속 나아가요, 앞으로.",
+      "category": "Strength",
+      "generated_at": "2026-03-19T19:39:07.704339"
+    },
+    {
+      "english": "Your effort, matters.",
+      "korean": "당신의 노력, 중요해요.",
+      "category": "Strength",
+      "generated_at": "2026-03-19T19:39:07.704340"
+    },
+    {
+      "english": "Be brave, face it.",
+      "korean": "용감하게, 맞서세요.",
+      "category": "Strength",
+      "generated_at": "2026-03-19T19:39:07.704341"
     }
   ],
-  "last_updated": "2026-03-19T17:38:24.615474"
+  "last_updated": "2026-03-19T19:39:07.704342"
 }
