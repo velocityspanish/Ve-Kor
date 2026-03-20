@@ -1289,7 +1289,37 @@
       "korean": "마음으로, 들어요.",
       "category": "Kindness",
       "generated_at": "2026-03-20T19:27:07.543927"
+    },
+    {
+      "english": "Hello there, nice to meet you.",
+      "korean": "안녕하세요, 만나서 반가워요.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-20T21:03:34.250308"
+    },
+    {
+      "english": "Thank you, I appreciate it.",
+      "korean": "감사합니다, 고마워요.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-20T21:03:34.250317"
+    },
+    {
+      "english": "Excuse me, may I ask?",
+      "korean": "저기요, 질문해도 될까요?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-20T21:03:34.250319"
+    },
+    {
+      "english": "Yes, that's right.",
+      "korean": "네, 맞아요.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-20T21:03:34.250320"
+    },
+    {
+      "english": "No, that's not it.",
+      "korean": "아니요, 그렇지 않아요.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-03-20T21:03:34.250321"
     }
   ],
-  "last_updated": "2026-03-20T19:27:07.543928"
+  "last_updated": "2026-03-20T21:03:34.250323"
 }
