@@ -1229,7 +1229,37 @@
       "korean": "고요함은, 선물입니다.",
       "category": "Inner Peace",
       "generated_at": "2026-03-20T05:08:14.355158"
+    },
+    {
+      "english": "Here, please. This menu.",
+      "korean": "여기요. 이 메뉴 주세요.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-20T16:04:18.447437"
+    },
+    {
+      "english": "We're ready, to order now.",
+      "korean": "저희, 주문할게요.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-20T16:04:18.447445"
+    },
+    {
+      "english": "What's this, recommended dish?",
+      "korean": "이거, 추천 메뉴인가요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-20T16:04:18.447448"
+    },
+    {
+      "english": "Is it spicy, this one?",
+      "korean": "이거, 매운 편인가요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-20T16:04:18.447449"
+    },
+    {
+      "english": "Could I have, water, please?",
+      "korean": "물 좀, 주시겠어요?",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-03-20T16:04:18.447450"
     }
   ],
-  "last_updated": "2026-03-20T05:08:14.355159"
+  "last_updated": "2026-03-20T16:04:18.447451"
 }
