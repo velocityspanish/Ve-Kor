@@ -1259,7 +1259,37 @@
       "korean": "물 좀, 주시겠어요?",
       "category": "Restaurant Korean",
       "generated_at": "2026-03-20T16:04:18.447450"
+    },
+    {
+      "english": "Be kind, always.",
+      "korean": "친절하게, 언제나.",
+      "category": "Kindness",
+      "generated_at": "2026-03-20T19:27:07.543914"
+    },
+    {
+      "english": "Help others, please.",
+      "korean": "다른 사람, 도와주세요.",
+      "category": "Kindness",
+      "generated_at": "2026-03-20T19:27:07.543923"
+    },
+    {
+      "english": "Share your smile.",
+      "korean": "당신의 미소, 나눠요.",
+      "category": "Kindness",
+      "generated_at": "2026-03-20T19:27:07.543924"
+    },
+    {
+      "english": "Be a good friend.",
+      "korean": "좋은 친구, 되세요.",
+      "category": "Kindness",
+      "generated_at": "2026-03-20T19:27:07.543926"
+    },
+    {
+      "english": "Listen with heart.",
+      "korean": "마음으로, 들어요.",
+      "category": "Kindness",
+      "generated_at": "2026-03-20T19:27:07.543927"
     }
   ],
-  "last_updated": "2026-03-20T16:04:18.447451"
+  "last_updated": "2026-03-20T19:27:07.543928"
 }
