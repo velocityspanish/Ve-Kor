@@ -1409,7 +1409,37 @@
       "korean": "힘차게 나아가요, 온 힘을 다해.",
       "category": "Perseverance",
       "generated_at": "2026-03-21T14:57:25.281707"
+    },
+    {
+      "english": "I can do it, slowly.",
+      "korean": "할 수 있어요, 천천히.",
+      "category": "Confidence",
+      "generated_at": "2026-03-21T17:55:04.896218"
+    },
+    {
+      "english": "Learning is fun, always.",
+      "korean": "배우는 건 재미있어요, 언제나.",
+      "category": "Confidence",
+      "generated_at": "2026-03-21T17:55:04.896226"
+    },
+    {
+      "english": "Don't give up, please.",
+      "korean": "포기하지 마세요, 제발.",
+      "category": "Confidence",
+      "generated_at": "2026-03-21T17:55:04.896228"
+    },
+    {
+      "english": "You are doing well.",
+      "korean": "잘 하고 있어요.",
+      "category": "Confidence",
+      "generated_at": "2026-03-21T17:55:04.896229"
+    },
+    {
+      "english": "Practice makes perfect, right?",
+      "korean": "연습하면 늘어요, 그렇죠?",
+      "category": "Confidence",
+      "generated_at": "2026-03-21T17:55:04.896230"
     }
   ],
-  "last_updated": "2026-03-21T14:57:25.281708"
+  "last_updated": "2026-03-21T17:55:04.896231"
 }
