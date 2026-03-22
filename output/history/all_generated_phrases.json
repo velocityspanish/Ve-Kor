@@ -1499,7 +1499,37 @@
       "korean": "좋은 선택을 하세요, 현명하게.",
       "category": "Positive Life",
       "generated_at": "2026-03-21T23:50:20.917628"
+    },
+    {
+      "english": "You're my best friend, okay?",
+      "korean": "내 제일 친한 친구야, 알겠지?",
+      "category": "Friendship",
+      "generated_at": "2026-03-22T05:12:40.752125"
+    },
+    {
+      "english": "Let's hang out soon, yeah?",
+      "korean": "우리 곧 만나자, 응?",
+      "category": "Friendship",
+      "generated_at": "2026-03-22T05:12:40.752134"
+    },
+    {
+      "english": "I'm always here for you.",
+      "korean": "언제나 네 곁에 있을게.",
+      "category": "Friendship",
+      "generated_at": "2026-03-22T05:12:40.752135"
+    },
+    {
+      "english": "Thanks for everything, truly.",
+      "korean": "모든 것에 고마워, 정말.",
+      "category": "Friendship",
+      "generated_at": "2026-03-22T05:12:40.752137"
+    },
+    {
+      "english": "We have so much fun.",
+      "korean": "우리 정말 재밌잖아.",
+      "category": "Friendship",
+      "generated_at": "2026-03-22T05:12:40.752138"
     }
   ],
-  "last_updated": "2026-03-21T23:50:20.917630"
+  "last_updated": "2026-03-22T05:12:40.752139"
 }
