@@ -1559,7 +1559,37 @@
       "korean": "매일, 감사해요.",
       "category": "Happiness",
       "generated_at": "2026-03-22T14:58:26.178862"
+    },
+    {
+      "english": "So pleased, indeed.",
+      "korean": "아주 만족스러워요, 정말.",
+      "category": "Joy",
+      "generated_at": "2026-03-22T17:54:56.480036"
+    },
+    {
+      "english": "Pure happiness, it is.",
+      "korean": "순수한 행복이에요, 이게.",
+      "category": "Joy",
+      "generated_at": "2026-03-22T17:54:56.480046"
+    },
+    {
+      "english": "Couldn't be happier, ever.",
+      "korean": "더 행복할 수 없어요, 언제나.",
+      "category": "Joy",
+      "generated_at": "2026-03-22T17:54:56.480052"
+    },
+    {
+      "english": "Such a cheerful moment.",
+      "korean": "정말 즐거운 순간이에요.",
+      "category": "Joy",
+      "generated_at": "2026-03-22T17:54:56.480053"
+    },
+    {
+      "english": "My heart is light, now.",
+      "korean": "마음이 가벼워요, 지금.",
+      "category": "Joy",
+      "generated_at": "2026-03-22T17:54:56.480054"
     }
   ],
-  "last_updated": "2026-03-22T14:58:26.178864"
+  "last_updated": "2026-03-22T17:54:56.480056"
 }
