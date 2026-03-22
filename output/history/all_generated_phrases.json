@@ -1529,7 +1529,37 @@
       "korean": "우리 정말 재밌잖아.",
       "category": "Friendship",
       "generated_at": "2026-03-22T05:12:40.752138"
+    },
+    {
+      "english": "Joy, in small moments.",
+      "korean": "작은 순간, 기쁨.",
+      "category": "Happiness",
+      "generated_at": "2026-03-22T14:58:26.178850"
+    },
+    {
+      "english": "Smile, it's contagious.",
+      "korean": "웃어요, 퍼져요.",
+      "category": "Happiness",
+      "generated_at": "2026-03-22T14:58:26.178858"
+    },
+    {
+      "english": "Peace, within myself.",
+      "korean": "내 안의, 평화.",
+      "category": "Happiness",
+      "generated_at": "2026-03-22T14:58:26.178860"
+    },
+    {
+      "english": "Love, and be loved.",
+      "korean": "사랑하고, 사랑받아요.",
+      "category": "Happiness",
+      "generated_at": "2026-03-22T14:58:26.178861"
+    },
+    {
+      "english": "Gratitude, every day.",
+      "korean": "매일, 감사해요.",
+      "category": "Happiness",
+      "generated_at": "2026-03-22T14:58:26.178862"
     }
   ],
-  "last_updated": "2026-03-22T05:12:40.752139"
+  "last_updated": "2026-03-22T14:58:26.178864"
 }
