@@ -1649,7 +1649,37 @@
       "korean": "정말 감사합니다.",
       "category": "Travel Korean",
       "generated_at": "2026-03-22T23:56:35.691181"
+    },
+    {
+      "english": "Learn Korean, for fun.",
+      "korean": "한국어 배워요, 재미있게.",
+      "category": "Purpose",
+      "generated_at": "2026-03-23T05:48:04.896174"
+    },
+    {
+      "english": "Study hard, then relax.",
+      "korean": "열심히 공부하고, 쉬세요.",
+      "category": "Purpose",
+      "generated_at": "2026-03-23T05:48:04.896182"
+    },
+    {
+      "english": "Speak Korean, everyday.",
+      "korean": "매일 한국어 말해요.",
+      "category": "Purpose",
+      "generated_at": "2026-03-23T05:48:04.896183"
+    },
+    {
+      "english": "Travel Korea, and explore.",
+      "korean": "한국 여행해요, 탐험하면서.",
+      "category": "Purpose",
+      "generated_at": "2026-03-23T05:48:04.896184"
+    },
+    {
+      "english": "Eat delicious food, often.",
+      "korean": "맛있는 음식 자주 먹어요.",
+      "category": "Purpose",
+      "generated_at": "2026-03-23T05:48:04.896186"
     }
   ],
-  "last_updated": "2026-03-22T23:56:35.691183"
+  "last_updated": "2026-03-23T05:48:04.896187"
 }
