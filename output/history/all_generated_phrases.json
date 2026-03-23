@@ -1739,7 +1739,37 @@
       "korean": "당신은, 충분해요.",
       "category": "Inner Peace",
       "generated_at": "2026-03-23T19:39:03.319367"
+    },
+    {
+      "english": "My mom, she's so kind.",
+      "korean": "우리 엄마, 정말 친절해요.",
+      "category": "Family Terms",
+      "generated_at": "2026-03-23T21:52:34.367713"
+    },
+    {
+      "english": "My dad, he's very funny.",
+      "korean": "우리 아빠, 아주 재밌어요.",
+      "category": "Family Terms",
+      "generated_at": "2026-03-23T21:52:34.367720"
+    },
+    {
+      "english": "My older sister, she's smart.",
+      "korean": "언니, 똑똑해요.",
+      "category": "Family Terms",
+      "generated_at": "2026-03-23T21:52:34.367722"
+    },
+    {
+      "english": "My older brother, he's cool.",
+      "korean": "오빠, 멋있어요.",
+      "category": "Family Terms",
+      "generated_at": "2026-03-23T21:52:34.367723"
+    },
+    {
+      "english": "My younger sister, she's cute.",
+      "korean": "여동생, 귀여워요.",
+      "category": "Family Terms",
+      "generated_at": "2026-03-23T21:52:34.367724"
     }
   ],
-  "last_updated": "2026-03-23T19:39:03.319368"
+  "last_updated": "2026-03-23T21:52:34.367726"
 }
