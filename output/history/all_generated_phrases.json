@@ -1679,7 +1679,37 @@
       "korean": "맛있는 음식 자주 먹어요.",
       "category": "Purpose",
       "generated_at": "2026-03-23T05:48:04.896186"
+    },
+    {
+      "english": "Good things take time, wait a little.",
+      "korean": "좋은 일은 시간이 걸려요, 조금만 기다려요.",
+      "category": "Patience",
+      "generated_at": "2026-03-23T17:12:32.563832"
+    },
+    {
+      "english": "Slow and steady, wins the race.",
+      "korean": "천천히 꾸준히, 승리합니다.",
+      "category": "Patience",
+      "generated_at": "2026-03-23T17:12:32.563839"
+    },
+    {
+      "english": "Don't rush, let it unfold.",
+      "korean": "서두르지 마세요, 풀리도록 두세요.",
+      "category": "Patience",
+      "generated_at": "2026-03-23T17:12:32.563841"
+    },
+    {
+      "english": "Be patient, the reward will come.",
+      "korean": "인내심을 가지세요, 보상이 올 거예요.",
+      "category": "Patience",
+      "generated_at": "2026-03-23T17:12:32.563842"
+    },
+    {
+      "english": "Rome wasn't built, in a day.",
+      "korean": "로마는 하루아침에, 지어지지 않았어요.",
+      "category": "Patience",
+      "generated_at": "2026-03-23T17:12:32.563843"
     }
   ],
-  "last_updated": "2026-03-23T05:48:04.896187"
+  "last_updated": "2026-03-23T17:12:32.563844"
 }
