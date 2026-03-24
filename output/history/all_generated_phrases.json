@@ -1799,7 +1799,37 @@
       "korean": "조금 아끼고, 조금 쓰세요.",
       "category": "Balance",
       "generated_at": "2026-03-23T23:59:15.404729"
+    },
+    {
+      "english": "Be brave, little one.",
+      "korean": "용감해져, 아가야.",
+      "category": "Courage",
+      "generated_at": "2026-03-24T05:15:53.398558"
+    },
+    {
+      "english": "Face your fears, head on.",
+      "korean": "두려움에, 정면으로 맞서.",
+      "category": "Courage",
+      "generated_at": "2026-03-24T05:15:53.398568"
+    },
+    {
+      "english": "Take a deep breath, then go.",
+      "korean": "심호흡 한 번, 그리고 가.",
+      "category": "Courage",
+      "generated_at": "2026-03-24T05:15:53.398570"
+    },
+    {
+      "english": "You are stronger than you think.",
+      "korean": "네 생각보다, 넌 더 강해.",
+      "category": "Courage",
+      "generated_at": "2026-03-24T05:15:53.398571"
+    },
+    {
+      "english": "Step out, boldly.",
+      "korean": "발을 내디뎌, 대담하게.",
+      "category": "Courage",
+      "generated_at": "2026-03-24T05:15:53.398572"
     }
   ],
-  "last_updated": "2026-03-23T23:59:15.404731"
+  "last_updated": "2026-03-24T05:15:53.398573"
 }
