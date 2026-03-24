@@ -1859,7 +1859,37 @@
       "korean": "포장, 되나요?",
       "category": "Restaurant Korean",
       "generated_at": "2026-03-24T17:34:19.594791"
+    },
+    {
+      "english": "Thank you, for everything.",
+      "korean": "모든 것에, 감사해요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-24T19:56:48.329743"
+    },
+    {
+      "english": "I'm so grateful, truly.",
+      "korean": "정말, 감사해요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-24T19:56:48.329753"
+    },
+    {
+      "english": "You're a lifesaver, thank you.",
+      "korean": "정말 고마워요, 덕분에요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-24T19:56:48.329754"
+    },
+    {
+      "english": "My thanks, are endless.",
+      "korean": "제 감사함은, 끝이 없어요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-24T19:56:48.329755"
+    },
+    {
+      "english": "I appreciate you, a lot.",
+      "korean": "당신을, 많이 고마워해요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-24T19:56:48.329756"
     }
   ],
-  "last_updated": "2026-03-24T17:34:19.594796"
+  "last_updated": "2026-03-24T19:56:48.329758"
 }
