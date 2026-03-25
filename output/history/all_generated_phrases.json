@@ -2009,7 +2009,37 @@
       "korean": "조금, 이따가.",
       "category": "Time Korean",
       "generated_at": "2026-03-25T19:37:40.461963"
+    },
+    {
+      "english": "Fire! Fire!",
+      "korean": "불이야! 불이야!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-03-25T21:57:25.002622"
+    },
+    {
+      "english": "I can't breathe.",
+      "korean": "숨을 못 쉬겠어요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-03-25T21:57:25.002631"
+    },
+    {
+      "english": "Is anyone there?",
+      "korean": "누구 계세요?",
+      "category": "Emergency Korean",
+      "generated_at": "2026-03-25T21:57:25.002632"
+    },
+    {
+      "english": "It hurts here.",
+      "korean": "여기가 아파요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-03-25T21:57:25.002633"
+    },
+    {
+      "english": "I need a phone.",
+      "korean": "전화기가 필요해요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-03-25T21:57:25.002634"
     }
   ],
-  "last_updated": "2026-03-25T19:37:40.461965"
+  "last_updated": "2026-03-25T21:57:25.002640"
 }
