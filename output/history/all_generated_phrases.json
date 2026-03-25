@@ -1979,7 +1979,37 @@
       "korean": "모든 발걸음이 중요해요.",
       "category": "Hope",
       "generated_at": "2026-03-25T05:16:46.738900"
+    },
+    {
+      "english": "Now, let's go.",
+      "korean": "지금, 갑시다.",
+      "category": "Time Korean",
+      "generated_at": "2026-03-25T19:37:40.461951"
+    },
+    {
+      "english": "See you, later.",
+      "korean": "나중에, 봐요.",
+      "category": "Time Korean",
+      "generated_at": "2026-03-25T19:37:40.461960"
+    },
+    {
+      "english": "What time, is it?",
+      "korean": "몇 시, 예요?",
+      "category": "Time Korean",
+      "generated_at": "2026-03-25T19:37:40.461961"
+    },
+    {
+      "english": "It's, 3 o'clock.",
+      "korean": "세 시, 입니다.",
+      "category": "Time Korean",
+      "generated_at": "2026-03-25T19:37:40.461962"
+    },
+    {
+      "english": "A little, later.",
+      "korean": "조금, 이따가.",
+      "category": "Time Korean",
+      "generated_at": "2026-03-25T19:37:40.461963"
     }
   ],
-  "last_updated": "2026-03-25T05:16:46.738902"
+  "last_updated": "2026-03-25T19:37:40.461965"
 }
