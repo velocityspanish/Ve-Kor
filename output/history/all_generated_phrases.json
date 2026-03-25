@@ -1949,7 +1949,37 @@
       "korean": "네 노력은 중요해, 정말.",
       "category": "Motivation",
       "generated_at": "2026-03-24T23:59:24.432439"
+    },
+    {
+      "english": "Tomorrow will be better.",
+      "korean": "내일은 더 좋을 거예요.",
+      "category": "Hope",
+      "generated_at": "2026-03-25T05:16:46.738888"
+    },
+    {
+      "english": "There is always a way.",
+      "korean": "언제나 방법이 있어요.",
+      "category": "Hope",
+      "generated_at": "2026-03-25T05:16:46.738897"
+    },
+    {
+      "english": "Good things take time.",
+      "korean": "좋은 일은 시간이 걸려요.",
+      "category": "Hope",
+      "generated_at": "2026-03-25T05:16:46.738898"
+    },
+    {
+      "english": "Never give up hope.",
+      "korean": "희망을 절대 포기하지 마세요.",
+      "category": "Hope",
+      "generated_at": "2026-03-25T05:16:46.738899"
+    },
+    {
+      "english": "Every step counts.",
+      "korean": "모든 발걸음이 중요해요.",
+      "category": "Hope",
+      "generated_at": "2026-03-25T05:16:46.738900"
     }
   ],
-  "last_updated": "2026-03-24T23:59:24.432441"
+  "last_updated": "2026-03-25T05:16:46.738902"
 }
