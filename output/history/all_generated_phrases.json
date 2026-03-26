@@ -2039,7 +2039,37 @@
       "korean": "전화기가 필요해요.",
       "category": "Emergency Korean",
       "generated_at": "2026-03-25T21:57:25.002634"
+    },
+    {
+      "english": "You understand me so well.",
+      "korean": "나를 정말 잘 알아.",
+      "category": "Friendship",
+      "generated_at": "2026-03-26T00:04:13.775584"
+    },
+    {
+      "english": "Glad we met, seriously.",
+      "korean": "만나서 반가워, 진심으로.",
+      "category": "Friendship",
+      "generated_at": "2026-03-26T00:04:13.775594"
+    },
+    {
+      "english": "You're a great person, really.",
+      "korean": "너 정말 좋은 사람이야.",
+      "category": "Friendship",
+      "generated_at": "2026-03-26T00:04:13.775596"
+    },
+    {
+      "english": "Let's make more memories.",
+      "korean": "더 많은 추억 만들자.",
+      "category": "Friendship",
+      "generated_at": "2026-03-26T00:04:13.775597"
+    },
+    {
+      "english": "Our friendship is special.",
+      "korean": "우리 우정은 특별해.",
+      "category": "Friendship",
+      "generated_at": "2026-03-26T00:04:13.775598"
     }
   ],
-  "last_updated": "2026-03-25T21:57:25.002640"
+  "last_updated": "2026-03-26T00:04:13.775600"
 }
