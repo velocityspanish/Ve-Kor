@@ -2069,7 +2069,37 @@
       "korean": "우리 우정은 특별해.",
       "category": "Friendship",
       "generated_at": "2026-03-26T00:04:13.775598"
+    },
+    {
+      "english": "Make friends, be kind.",
+      "korean": "친구 사귀어요, 친절하게.",
+      "category": "Purpose",
+      "generated_at": "2026-03-26T19:58:09.110305"
+    },
+    {
+      "english": "Listen to K-pop, and sing.",
+      "korean": "케이팝 들어요, 노래하면서.",
+      "category": "Purpose",
+      "generated_at": "2026-03-26T19:58:09.110311"
+    },
+    {
+      "english": "Watch Korean dramas, with subtitles.",
+      "korean": "한국 드라마 봐요, 자막이랑.",
+      "category": "Purpose",
+      "generated_at": "2026-03-26T19:58:09.110312"
+    },
+    {
+      "english": "Understand culture, grow more.",
+      "korean": "문화 이해해요, 더 성장해요.",
+      "category": "Purpose",
+      "generated_at": "2026-03-26T19:58:09.110314"
+    },
+    {
+      "english": "Try your best, believe.",
+      "korean": "최선을 다해요, 믿으세요.",
+      "category": "Purpose",
+      "generated_at": "2026-03-26T19:58:09.110315"
     }
   ],
-  "last_updated": "2026-03-26T00:04:13.775600"
+  "last_updated": "2026-03-26T19:58:09.110316"
 }
