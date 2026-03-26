@@ -2099,7 +2099,37 @@
       "korean": "최선을 다해요, 믿으세요.",
       "category": "Purpose",
       "generated_at": "2026-03-26T19:58:09.110315"
+    },
+    {
+      "english": "I'm sorry, please forgive me.",
+      "korean": "미안해요, 용서해 주세요.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-26T21:46:42.990213"
+    },
+    {
+      "english": "It was my fault, I apologize.",
+      "korean": "제 잘못이에요, 죄송합니다.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-26T21:46:42.990223"
+    },
+    {
+      "english": "Can you let it go?",
+      "korean": "그냥 넘어가 줄 수 있어요?",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-26T21:46:42.990225"
+    },
+    {
+      "english": "I didn't mean to, really.",
+      "korean": "일부러 그런 거 아니에요, 정말.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-26T21:46:42.990226"
+    },
+    {
+      "english": "I hope you can forgive me.",
+      "korean": "용서해 주시길 바라요.",
+      "category": "Forgiveness",
+      "generated_at": "2026-03-26T21:46:42.990227"
     }
   ],
-  "last_updated": "2026-03-26T19:58:09.110316"
+  "last_updated": "2026-03-26T21:46:42.990229"
 }
