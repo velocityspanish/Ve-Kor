@@ -2129,7 +2129,37 @@
       "korean": "용서해 주시길 바라요.",
       "category": "Forgiveness",
       "generated_at": "2026-03-26T21:46:42.990227"
+    },
+    {
+      "english": "How much, is this?",
+      "korean": "이거, 얼마예요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-27T00:01:49.083614"
+    },
+    {
+      "english": "Can I try, this on?",
+      "korean": "이거, 입어봐도 돼요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-27T00:01:49.083620"
+    },
+    {
+      "english": "Do you have, another size?",
+      "korean": "다른 사이즈, 있어요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-27T00:01:49.083621"
+    },
+    {
+      "english": "I'm just looking, thanks.",
+      "korean": "그냥, 구경만 할게요.",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-27T00:01:49.083623"
+    },
+    {
+      "english": "Can I pay, with card?",
+      "korean": "카드로, 계산해도 돼요?",
+      "category": "Shopping Korean",
+      "generated_at": "2026-03-27T00:01:49.083624"
     }
   ],
-  "last_updated": "2026-03-26T21:46:42.990229"
+  "last_updated": "2026-03-27T00:01:49.083625"
 }
