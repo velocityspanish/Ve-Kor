@@ -2159,7 +2159,37 @@
       "korean": "카드로, 계산해도 돼요?",
       "category": "Shopping Korean",
       "generated_at": "2026-03-27T00:01:49.083624"
+    },
+    {
+      "english": "Let's go, slowly but surely.",
+      "korean": "천천히, 꾸준히 가요.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-27T17:13:35.955738"
+    },
+    {
+      "english": "No worries, it's okay.",
+      "korean": "걱정 마요, 괜찮아요.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-27T17:13:35.955747"
+    },
+    {
+      "english": "Take your time, no rush.",
+      "korean": "천천히 하세요, 서두르지 마세요.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-27T17:13:35.955748"
+    },
+    {
+      "english": "Just like that, keep going.",
+      "korean": "그대로, 계속 하세요.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-27T17:13:35.955749"
+    },
+    {
+      "english": "Don't give up, try again.",
+      "korean": "포기하지 마세요, 다시 시도해요.",
+      "category": "Common Expressions",
+      "generated_at": "2026-03-27T17:13:35.955750"
     }
   ],
-  "last_updated": "2026-03-27T00:01:49.083625"
+  "last_updated": "2026-03-27T17:13:35.955752"
 }
