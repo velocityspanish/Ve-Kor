@@ -2219,7 +2219,37 @@
       "korean": "지금 시작하고, 강하게 마무리해요.",
       "category": "Balance",
       "generated_at": "2026-03-27T19:33:34.824453"
+    },
+    {
+      "english": "You helped me, so much.",
+      "korean": "저를, 많이 도와주셨어요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-27T21:53:25.256763"
+    },
+    {
+      "english": "I won't forget, your kindness.",
+      "korean": "당신의 친절, 잊지 않을게요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-27T21:53:25.256773"
+    },
+    {
+      "english": "This means, a lot to me.",
+      "korean": "저에게, 정말 큰 의미예요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-27T21:53:25.256774"
+    },
+    {
+      "english": "Deepest thanks, to you.",
+      "korean": "당신께, 깊이 감사드립니다.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-27T21:53:25.256775"
+    },
+    {
+      "english": "So glad, I met you.",
+      "korean": "만나서, 정말 기뻐요.",
+      "category": "Gratitude",
+      "generated_at": "2026-03-27T21:53:25.256777"
     }
   ],
-  "last_updated": "2026-03-27T19:33:34.824454"
+  "last_updated": "2026-03-27T21:53:25.256778"
 }
