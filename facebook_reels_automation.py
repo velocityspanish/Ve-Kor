@@ -106,6 +106,9 @@ MAX_RECENT_CATEGORIES = 15  # Track last 15 categories to avoid repeats
 
 # ============== PHRASE HISTORY MANAGEMENT (Prevent Repeats) ==============
 
+# Track phrases generated in current session to prevent immediate repeats
+_session_phrases = set()
+
 def load_phrase_history():
     """Load all previously generated phrases"""
     if PHRASE_HISTORY_FILE.exists():
@@ -122,13 +125,25 @@ def save_phrase_history(data):
 
 
 def is_phrase_used(english_phrase):
-    """Check if phrase was already generated"""
+    """Check if phrase was already generated (global history + current session)"""
     history = load_phrase_history()
     english_lower = english_phrase.lower().strip()
+    
+    # Check global history
     for p in history.get("phrases", []):
         if p.get("english", "").lower().strip() == english_lower:
             return True
+    
+    # Check current session
+    if english_lower in _session_phrases:
+        return True
+    
     return False
+
+
+def add_phrase_to_session(english_phrase):
+    """Add phrase to session tracking"""
+    _session_phrases.add(english_phrase.lower().strip())
 
 
 def add_phrases_to_history(phrases, category):
@@ -198,12 +213,14 @@ def get_available_category():
 # ============== CONTENT GENERATION ==============
 
 def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
-    """Generate unique bilingual phrases with natural pauses, ensuring no repeats"""
+    """Generate unique bilingual phrases with natural pauses, ensuring NO repeats ever"""
 
     category_korean = CATEGORIES_KOREAN[category_english]
 
-    # Try AI first
-    max_attempts = 3
+    # Increased attempts and temperature for maximum variety
+    max_attempts = 10
+    all_tried_phrases = set()  # Track all phrases seen across all attempts
+    
     for attempt in range(max_attempts):
         try:
             import requests
@@ -213,42 +230,76 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
                 "Content-Type": "application/json"
             }
 
-            prompt = f"""Create {num_phrases * 2} unique {category_english} phrases for English speakers learning Korean.
+            # Load history to give AI context of what's already used
+            history = load_phrase_history()
+            used_english = [p["english"] for p in history.get("phrases", [])[-100:]]
+            used_context = "\n".join([f"- {p}" for p in used_english[:40]])
 
-IMPORTANT RULES FOR NATURAL SPEECH:
-1. Keep phrases SHORT (5-12 words max per language)
+            # Add randomness to prompt to prevent API caching
+            style_variations = [
+                "Write phrases that feel personal and intimate, like advice from a friend.",
+                "Create phrases with vivid imagery and metaphors from nature.",
+                "Write phrases that challenge conventional thinking and inspire action.",
+                "Create phrases that emphasize inner strength and self-discovery.",
+                "Write phrases that celebrate small victories and daily progress.",
+                "Create phrases with a poetic, contemplative tone.",
+                "Write direct, empowering statements that motivate immediate action.",
+                "Create phrases that blend wisdom with modern life challenges.",
+            ]
+            style_instruction = random.choice(style_variations)
+
+            prompt = f"""Create {num_phrases * 5} unique {category_english} phrases for English speakers learning Korean.
+
+{style_instruction}
+
+FORMAT RULES:
+1. Keep phrases SHORT (4-9 words max per language)
 2. Add NATURAL PAUSES using commas (e.g., "Dream big, start small")
-3. Use punctuation for breathing room in TTS
-4. Avoid long run-on sentences
-5. Each phrase should be speakable in 3-5 seconds
+3. Each phrase should be speakable in 3-4 seconds
+4. NEVER use these already-generated phrases:
+{used_context}
 
-For each phrase:
-1. English phrase (with commas for natural pauses)
-2. Korean translation (Hangul characters)
-3. Romanization pronunciation guide (Revised Romanization, e.g., "annyeonghaseyo")
+5. AVOID THESE OVERUSED CLICHÉS (never use these):
+   - "Little by little, wins the race"
+   - "Slow and steady, wins the prize"  
+   - "Patience, is a virtue"
+   - "Rome wasn't built, in a day"
+   - "Good things, take time"
+   - "One step, at a time"
+   - "Keep trying, don't give up"
+   - "Wait for it, it will come"
+   - "Believe in yourself"
+   - "Never give up"
+   - "Dream big, start small"
+   - "You are capable"
+   - "Your future is created"
 
 Return as JSON array:
 [{{"english": "...", "korean": "...", "romanization": "..."}}]
 
-IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before."""
+CRITICAL: Every phrase MUST be completely new, unique, and ORIGINAL."""
 
+            # Higher temperature for more creativity
             payload = {
                 "model": AI_MODEL,
                 "messages": [
-                    {"role": "system", "content": "You are a Korean teacher. Create short, natural phrases with pauses."},
+                    {"role": "system", "content": "You are a Korean teacher. Create SHORT, FRESH, unique phrases with natural pauses. NEVER repeat phrases. Be creative and original."},
                     {"role": "user", "content": prompt}
                 ],
-                "temperature": 0.9
+                "temperature": 1.5,
+                "top_p": 1.0,
+                "presence_penalty": 0.5,
+                "frequency_penalty": 0.5
             }
 
-            print(f"[content] Attempt {attempt + 1}: Calling API...")
-            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            print(f"[content] Attempt {attempt + 1}/{max_attempts}: Calling API...")
+            response = requests.post(url, headers=headers, json=payload, timeout=120)
             response.raise_for_status()
 
             data = response.json()
             content = data["choices"][0]["message"]["content"].strip()
-            
-            print(f"[content] Raw API response: {content[:200]}...")
+
+            print(f"[content] Raw API response: {content[:400]}...")
 
             # Extract JSON
             if "```json" in content:
@@ -263,23 +314,57 @@ IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before."""
             unique_phrases = []
             skipped_long = 0
             skipped_used = 0
+            skipped_session = 0
+            skipped_cliche = 0
+            
+            # Cliché patterns to detect
+            cliche_patterns = [
+                "little by little", "slow and steady", "patience is a virtue",
+                "rome wasn't built", "good things take time", "one step at a time",
+                "keep trying", "don't give up", "wait for it", "believe in yourself",
+                "never give up", "dream big", "you are capable", "your future"
+            ]
+            
             for phrase in phrases:
-                # Skip if too long (over 15 words)
-                if len(phrase["english"].split()) > 15:
+                english = phrase.get("english", "").strip()
+                english_lower = english.lower()
+                
+                # Skip if too long (over 10 words)
+                if len(english.split()) > 10:
                     skipped_long += 1
                     continue
-                if is_phrase_used(phrase["english"]):
-                    skipped_used += 1
-                    print(f"[content] Skipping duplicate: {phrase['english']}")
+                
+                # Skip if contains cliché patterns
+                if any(cliche in english_lower for cliche in cliche_patterns):
+                    skipped_cliche += 1
+                    print(f"[content] Skipping cliché: {english}")
                     continue
+                
+                # Skip if already in global history
+                if is_phrase_used(english):
+                    skipped_used += 1
+                    print(f"[content] Skipping duplicate (history): {english}")
+                    continue
+                
+                # Skip if we've seen it in this run already
+                if english_lower in all_tried_phrases:
+                    skipped_session += 1
+                    print(f"[content] Skipping duplicate (this run): {english}")
+                    continue
+                
+                # Add to tracking and results
+                all_tried_phrases.add(english_lower)
                 unique_phrases.append(phrase)
+                
                 if len(unique_phrases) >= num_phrases:
                     break
 
-            print(f"[content] Got {len(unique_phrases)} valid phrases (skipped: {skipped_long} too long, {skipped_used} duplicates)")
+            print(f"[content] Got {len(unique_phrases)} valid phrases (skipped: {skipped_long} too long, {skipped_cliche} cliché, {skipped_used} history, {skipped_session} this run)")
 
             if len(unique_phrases) >= num_phrases:
                 add_phrases_to_history(unique_phrases[:num_phrases], category_english)
+                for p in unique_phrases[:num_phrases]:
+                    add_phrase_to_session(p["english"])
                 return unique_phrases[:num_phrases]
             else:
                 print(f"[content] Only got {len(unique_phrases)} phrases, need {num_phrases}, trying again...")
@@ -287,115 +372,11 @@ IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before."""
         except Exception as e:
             print(f"[content] Attempt {attempt + 1} failed: {e}")
 
-    # Fallback to fresh phrases
-    print("[content] Using fallback phrases...")
-    return get_fresh_fallback_phrases(category_english, num_phrases)
-
-
-def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
-    """Get fallback phrases, filtering out used ones"""
-
-    all_fallbacks = {
-        # Essential Korean Learning Categories
-        "Greetings": [
-            {"english": "Hello, nice to meet you.", "korean": "안녕하세요, 만나서 반가워요.", "romanization": "annyeonghaseyo, mannaseo bangawoyo."},
-            {"english": "Good morning!", "korean": "좋은 아침이에요!", "romanization": "joeun achimieyo!"},
-            {"english": "Good night, sleep well.", "korean": "안녕히 주무세요.", "romanization": "annyeonghi jumuseyo."},
-            {"english": "See you tomorrow!", "korean": "내일 봐요!", "romanization": "naeil bwayo!"},
-            {"english": "Goodbye, take care.", "korean": "안녕히 가세요.", "romanization": "annyeonghi gaseyo."},
-        ],
-        "Basic Phrases": [
-            {"english": "Thank you very much.", "korean": "정말 고마워요.", "romanization": "jeongmal gomawoyo."},
-            {"english": "You're welcome, no problem.", "korean": "천만에요, 문제없어요.", "romanization": "cheonmaneyo, munjeneopseoyo."},
-            {"english": "I'm sorry, excuse me.", "korean": "죄송해요, 실례합니다.", "romanization": "joesonghaeyo, sillyehamnida."},
-            {"english": "Yes, that's correct.", "korean": "네, 맞아요.", "romanization": "ne, majayo."},
-            {"english": "No, I don't think so.", "korean": "아니요, 아닌 것 같아요.", "romanization": "aniyo, anin geot gatayo."},
-        ],
-        "Common Expressions": [
-            {"english": "How are you doing today?", "korean": "오늘 어떻게 지내세요?", "romanization": "oneul eotteoke jinaeseyo?"},
-            {"english": "I'm fine, thank you.", "korean": "저는 잘 지내요, 고마워요.", "romanization": "jeoneun jal jinaeyo, gomawoyo."},
-            {"english": "What's your name?", "korean": "이름이 뭐예요?", "romanization": "ireumi mwoyeyo?"},
-            {"english": "My name is...", "korean": "제 이름은... 이에요.", "romanization": "je ireumeun... ieyo."},
-            {"english": "Nice to meet you too.", "korean": "저도 만나서 반가워요.", "romanization": "jeodo mannaseo bangawoyo."},
-        ],
-        "Travel Korean": [
-            {"english": "Where is the bathroom?", "korean": "화장실이 어디예요?", "romanization": "hwajangsiri eodiyeyo?"},
-            {"english": "How do I get there?", "korean": "거기 어떻게 가요?", "romanization": "geogi eotteoke gayo?"},
-            {"english": "I need a taxi, please.", "korean": "택시가 필요해요.", "romanization": "taeksiga piryohaeyo."},
-            {"english": "Take me to the hotel.", "korean": "호텔로 데려가 주세요.", "romanization": "hotello deryeoga juseyo."},
-            {"english": "How much does it cost?", "korean": "얼마예요?", "romanization": "eolmayeyo?"},
-        ],
-        "Restaurant Korean": [
-            {"english": "Can I see the menu?", "korean": "메뉴 좀 보여주세요.", "romanization": "menyo jom boyeojuseyo."},
-            {"english": "This looks delicious!", "korean": "이거 맛있어 보여요!", "romanization": "igeo masisseo boyeoyo!"},
-            {"english": "Water, please.", "korean": "물 좀 주세요.", "romanization": "mul jom juseyo."},
-            {"english": "Check, please.", "korean": "계산서 주세요.", "romanization": "gyesanseo juseyo."},
-            {"english": "It was delicious!", "korean": "잘 먹었습니다!", "romanization": "jal meogeosseumnida!"},
-        ],
-        "Shopping Korean": [
-            {"english": "How much is this?", "korean": "이거 얼마예요?", "romanization": "igeo eolmayeyo?"},
-            {"english": "Can I try this on?", "korean": "이거 입어봐도 돼요?", "romanization": "igeo ibeobwado dwaeyo?"},
-            {"english": "Do you have a smaller size?", "korean": "더 작은 사이즈 있어요?", "romanization": "deo jageun saijeu isseoyo?"},
-            {"english": "I'll take this one.", "korean": "이거로 할게요.", "romanization": "igeoro halgeyo."},
-            {"english": "Can I pay by card?", "korean": "카드로 계산할 수 있어요?", "romanization": "kadeuro gyesanhal su isseoyo?"},
-        ],
-        "Emergency Korean": [
-            {"english": "Help me, please!", "korean": "저 좀 도와주세요!", "romanization": "jeo jom dowajuseyo!"},
-            {"english": "Call the police!", "korean": "경찰 불러주세요!", "romanization": "gyeongchal bulleojuseyo!"},
-            {"english": "I need a doctor.", "korean": "의사가 필요해요.", "romanization": "uisaga piryohaeyo."},
-            {"english": "Where is the hospital?", "korean": "병원이 어디예요?", "romanization": "byeongwoni eodiyeyo?"},
-            {"english": "I'm lost, can you help?", "korean": "길을 잃었어요, 도와줄래요?", "romanization": "gireul ireosseoyo, dowajullaeyo?"},
-        ],
-        "Family Terms": [
-            {"english": "This is my mother.", "korean": "이분은 저희 어머니세요.", "romanization": "ibuneun jeohi eomeoniseyo."},
-            {"english": "This is my father.", "korean": "이분은 저희 아버지에요.", "romanization": "ibuneun jeohi abeojiyeyo."},
-            {"english": "I have an older brother.", "korean": "저는 오빠가 있어요.", "romanization": "jeoneun oppaga isseoyo."},
-            {"english": "I have a younger sister.", "korean": "저는 여동생이 있어요.", "romanization": "jeoneun yeodongsaengi isseoyo."},
-            {"english": "These are my parents.", "korean": "이분들은 저희 부모님이에요.", "romanization": "ibundeureun jeohi bumonimieyo."},
-        ],
-        "Numbers Korean": [
-            {"english": "One, two, three.", "korean": "하나, 둘, 셋.", "romanization": "hana, dul, set."},
-            {"english": "Four, five, six.", "korean": "넷, 다섯, 여섯.", "romanization": "net, daseot, yeoseot."},
-            {"english": "Seven, eight, nine, ten.", "korean": "일, 이, 삼, 사, 오, 육, 칠, 팔, 구, 십.", "romanization": "il, i, sam, sa, o, yuk, chil, pal, gu, sip."},
-            {"english": "What number is this?", "korean": "이거 몇이에요?", "romanization": "igeo myeochieyo?"},
-            {"english": "Give me two, please.", "korean": "두 개 주세요.", "romanization": "du gae juseyo."},
-        ],
-        "Time Korean": [
-            {"english": "What time is it?", "korean": "지금 몇 시예요?", "romanization": "jigeum myeot siyeyo?"},
-            {"english": "It's three o'clock.", "korean": "세 시예요.", "romanization": "se siyeyo."},
-            {"english": "See you at noon.", "korean": "정오에 봐요.", "romanization": "jeongo-e bwayo."},
-            {"english": "I'll be there in five minutes.", "korean": "5 분 후에 갈게요.", "romanization": "o-bun hue galgeyo."},
-            {"english": "What day is today?", "korean": "오늘 무슨 요일이에요?", "romanization": "oneul museun yoil-ieyo?"},
-        ],
-        # Motivational Categories
-        "Motivation": [
-            {"english": "Believe in yourself.", "korean": "자신을 믿으세요.", "romanization": "jasineul mideosseyo."},
-            {"english": "You are capable of amazing things.", "korean": "당신은 놀라운 일을 해낼 수 있어요.", "romanization": "dangsineun nollaun ireul haenael su isseoyo."},
-            {"english": "Dream big, start small.", "korean": "크게 꿈꾸고, 작게 시작하세요.", "romanization": "keuge kkumkkugo, jakge sigakhaseyo."},
-            {"english": "Your future is created by your actions.", "korean": "당신의 미래는 당신의 행동으로 만들어집니다.", "romanization": "dangsinui miraeneun dangsinui haengdongeuro mandeureojimnida."},
-            {"english": "Never give up on your dreams.", "korean": "절대 꿈을 포기하지 마세요.", "romanization": "jeoldae kkumeul pogihaji maseyo."},
-        ],
-        "Love": [
-            {"english": "Love yourself first.", "korean": "먼저 자신을 사랑하세요.", "romanization": "meonjeo jasineul saranghaseyo."},
-            {"english": "Love makes everything possible.", "korean": "사랑은 모든 것을 가능하게 해요.", "romanization": "sarangeun modeun geoseul ganeunghage haeyo."},
-        ],
-        "Success": [
-            {"english": "Success comes from hard work.", "korean": "성공은 노력에서 옵니다.", "romanization": "seonggongeun noryeogeseo omnida."},
-            {"english": "Keep going, you're getting there.", "korean": "계속 가세요, 거의 다 왔어요.", "romanization": "gyesok gaseyo, geoui da wasseoyo."},
-        ],
-        "Wisdom": [
-            {"english": "Knowledge is power.", "korean": "지식은 힘입니다.", "romanization": "jisigeun himimnida."},
-            {"english": "Learn from yesterday, live for today.", "korean": "어제에서 배우고, 오늘을 살아요.", "romanization": "eojeseo baeugo, oneureul sarayo."},
-        ],
-        "Happiness": [
-            {"english": "Happiness is a choice.", "korean": "행복은 선택입니다.", "romanization": "haengbogeun seontaegimnida."},
-            {"english": "Find joy in the little things.", "korean": "작은 것들 속에서 기쁨을 찾으세요.", "romanization": "jageun geotdeul sogeseo gippeumeul chajeuseyo."},
-        ],
-    }
-
-    fallbacks = all_fallbacks.get(category, all_fallbacks["Motivation"])
-    fresh_phrases = [p for p in fallbacks if not is_phrase_used(p["english"])]
-    return fresh_phrases[:num_phrases]
+    # NO FALLBACK - raise error if we can't get unique phrases
+    raise RuntimeError(
+        f"CRITICAL: Could not generate {num_phrases} unique phrases for '{category_english}' "
+        f"after {max_attempts} attempts. History may be exhausted or API issue."
+    )
 
 
 # ============== AUDIO GENERATION ==============
