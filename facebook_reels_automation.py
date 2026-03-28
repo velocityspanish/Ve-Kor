@@ -217,8 +217,8 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
 
     category_korean = CATEGORIES_KOREAN[category_english]
 
-    # Increased attempts and temperature for maximum variety
-    max_attempts = 10
+    # Optimized for 2-minute total generation time
+    max_attempts = 3  # Max 3 attempts (not 10) to stay under 2 minutes
     all_tried_phrases = set()  # Track all phrases seen across all attempts
     
     for attempt in range(max_attempts):
@@ -232,8 +232,8 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
 
             # Load history to give AI context of what's already used
             history = load_phrase_history()
-            used_english = [p["english"] for p in history.get("phrases", [])[-100:]]
-            used_context = "\n".join([f"- {p}" for p in used_english[:40]])
+            used_english = [p["english"] for p in history.get("phrases", [])[-50:]]
+            used_context = "\n".join([f"- {p}" for p in used_english[:20]])
 
             # Add randomness to prompt to prevent API caching
             style_variations = [
@@ -248,14 +248,14 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
             ]
             style_instruction = random.choice(style_variations)
 
-            prompt = f"""Create {num_phrases * 5} unique {category_english} phrases for English speakers learning Korean.
+            prompt = f"""Create {num_phrases * 3} unique {category_english} phrases for English speakers learning Korean.
 
 {style_instruction}
 
 FORMAT RULES:
-1. Keep phrases SHORT (4-9 words max per language)
+1. Keep phrases SHORT (4-8 words max per language)
 2. Add NATURAL PAUSES using commas (e.g., "Dream big, start small")
-3. Each phrase should be speakable in 3-4 seconds
+3. Each phrase should be speakable in 2-4 seconds
 4. NEVER use these already-generated phrases:
 {used_context}
 
@@ -293,7 +293,7 @@ CRITICAL: Every phrase MUST be completely new, unique, and ORIGINAL."""
             }
 
             print(f"[content] Attempt {attempt + 1}/{max_attempts}: Calling API...")
-            response = requests.post(url, headers=headers, json=payload, timeout=120)
+            response = requests.post(url, headers=headers, json=payload, timeout=30)
             response.raise_for_status()
 
             data = response.json()
@@ -329,8 +329,8 @@ CRITICAL: Every phrase MUST be completely new, unique, and ORIGINAL."""
                 english = phrase.get("english", "").strip()
                 english_lower = english.lower()
                 
-                # Skip if too long (over 10 words)
-                if len(english.split()) > 10:
+                # Skip if too long (over 9 words)
+                if len(english.split()) > 9:
                     skipped_long += 1
                     continue
                 
@@ -372,10 +372,52 @@ CRITICAL: Every phrase MUST be completely new, unique, and ORIGINAL."""
         except Exception as e:
             print(f"[content] Attempt {attempt + 1} failed: {e}")
 
-    # NO FALLBACK - raise error if we can't get unique phrases
+    # Last resort attempt with maximum randomness
+    try:
+        import requests
+        url = "https://gen.pollinations.ai/v1/chat/completions"
+        headers = {
+            "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
+            "Content-Type": "application/json"
+        }
+        
+        last_resort_prompt = f"""Generate exactly 5 short {category_english} phrases in English and Korean.
+Make them simple, unique, and different from common clichés.
+Return as JSON: [{{"english": "...", "korean": "...", "romanization": "..."}}]"""
+
+        payload = {
+            "model": AI_MODEL,
+            "messages": [{"role": "user", "content": last_resort_prompt}],
+            "temperature": 2.0
+        }
+        
+        print(f"[content] Last resort attempt with temperature 2.0...")
+        response = requests.post(url, headers=headers, json=payload, timeout=30)
+        response.raise_for_status()
+        
+        data = response.json()
+        content = data["choices"][0]["message"]["content"].strip()
+        
+        if "```json" in content:
+            content = content.split("```json")[1].split("```")[0].strip()
+        elif "```" in content:
+            content = content.split("```")[1].split("```")[0].strip()
+        
+        phrases = json.loads(content)
+        unique_phrases = [p for p in phrases if not is_phrase_used(p.get("english", ""))]
+        
+        if unique_phrases:
+            add_phrases_to_history(unique_phrases[:num_phrases], category_english)
+            for p in unique_phrases[:num_phrases]:
+                add_phrase_to_session(p["english"])
+            print(f"[content] Got {len(unique_phrases[:num_phrases])} phrases from last resort!")
+            return unique_phrases[:num_phrases]
+    except Exception as e:
+        print(f"[content] Last resort also failed: {e}")
+    
     raise RuntimeError(
         f"CRITICAL: Could not generate {num_phrases} unique phrases for '{category_english}' "
-        f"after {max_attempts} attempts. History may be exhausted or API issue."
+        f"after all attempts. Try again later or check API key."
     )
 
 
