@@ -3089,7 +3089,37 @@
       "korean": "쉬어요, 내일을 위해.",
       "category": "Hope",
       "generated_at": "2026-04-19T23:45:43.010115"
+    },
+    {
+      "english": "Move there, quickly!",
+      "korean": "거기로, 빨리!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-20T03:26:29.854307"
+    },
+    {
+      "english": "Call 911, now!",
+      "korean": "119 불러, 지금!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-20T03:26:29.854316"
+    },
+    {
+      "english": "Safety first, move!",
+      "korean": "안전 먼저, 가!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-20T03:26:29.854318"
+    },
+    {
+      "english": "Watch out, danger!",
+      "korean": "조심해, 위험!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-20T03:26:29.854319"
+    },
+    {
+      "english": "Stop right there!",
+      "korean": "거기 멈춰!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-20T03:26:29.854321"
     }
   ],
-  "last_updated": "2026-04-19T23:45:43.010116"
+  "last_updated": "2026-04-20T03:26:29.854324"
 }
