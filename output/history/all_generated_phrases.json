@@ -3509,7 +3509,37 @@
       "korean": "질문, 불 태우다.",
       "category": "Basic Phrases",
       "generated_at": "2026-04-22T20:49:46.505164"
+    },
+    {
+      "english": "Speak up, practice now.",
+      "korean": "말해봐, 지금 연습해.",
+      "category": "Common Expressions",
+      "generated_at": "2026-04-22T23:53:22.420981"
+    },
+    {
+      "english": "Listen well, learn fast.",
+      "korean": "잘 들어, 빨리 배워.",
+      "category": "Common Expressions",
+      "generated_at": "2026-04-22T23:53:22.420990"
+    },
+    {
+      "english": "Try Korean, today.",
+      "korean": "한국어 해봐, 오늘.",
+      "category": "Common Expressions",
+      "generated_at": "2026-04-22T23:53:22.420991"
+    },
+    {
+      "english": "Write it, remember it.",
+      "korean": "써봐, 기억해.",
+      "category": "Common Expressions",
+      "generated_at": "2026-04-22T23:53:22.420992"
+    },
+    {
+      "english": "Start this, get results.",
+      "korean": "시작해, 결과 얻어.",
+      "category": "Common Expressions",
+      "generated_at": "2026-04-22T23:53:22.420994"
     }
   ],
-  "last_updated": "2026-04-22T20:49:46.505166"
+  "last_updated": "2026-04-22T23:53:22.420995"
 }
