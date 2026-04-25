@@ -3929,7 +3929,37 @@
       "korean": "경찰 부르세요, 소속 필요!",
       "category": "Emergency Korean",
       "generated_at": "2026-04-25T17:31:37.104769"
+    },
+    {
+      "english": "Hello. New journey opens.",
+      "korean": "안녕하세요. 새 여행 열려요.",
+      "category": "Greetings",
+      "generated_at": "2026-04-25T20:29:55.907955"
+    },
+    {
+      "english": "Annyeong! Brave forward move.",
+      "korean": "안녕! 용감히 앞으로 가.",
+      "category": "Greetings",
+      "generated_at": "2026-04-25T20:29:55.907965"
+    },
+    {
+      "english": "Welcome. Think differently now.",
+      "korean": "어서 오세요. 다르게 생각해요.",
+      "category": "Greetings",
+      "generated_at": "2026-04-25T20:29:55.907966"
+    },
+    {
+      "english": "Long time no see. Speak again.",
+      "korean": "오랜만이에요. 다시 말해요.",
+      "category": "Greetings",
+      "generated_at": "2026-04-25T20:29:55.907967"
+    },
+    {
+      "english": "How are you? Your turn rises.",
+      "korean": "잘 지내요? 당신의 차례가 와요.",
+      "category": "Greetings",
+      "generated_at": "2026-04-25T20:29:55.907968"
     }
   ],
-  "last_updated": "2026-04-25T17:31:37.104770"
+  "last_updated": "2026-04-25T20:29:55.907969"
 }
