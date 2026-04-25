@@ -3899,7 +3899,37 @@
       "korean": "감촉이 불러요, 말 없는 이야기.",
       "category": "Shopping Korean",
       "generated_at": "2026-04-25T14:34:59.030971"
+    },
+    {
+      "english": "Danger nearby, flee fast!",
+      "korean": "위험 근처, 빨리 도망!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-25T17:31:37.104758"
+    },
+    {
+      "english": "Help me now, urgently!",
+      "korean": "도와주세요, 급해요!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-25T17:31:37.104765"
+    },
+    {
+      "english": "Fire! Evacuate structure!",
+      "korean": "불이야! 건물 나가!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-25T17:31:37.104767"
+    },
+    {
+      "english": "Lost child, search quick!",
+      "korean": "아이 잃어버림, 빨리 찾자!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-25T17:31:37.104768"
+    },
+    {
+      "english": "Call police, need guard!",
+      "korean": "경찰 부르세요, 소속 필요!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-04-25T17:31:37.104769"
     }
   ],
-  "last_updated": "2026-04-25T14:34:59.030972"
+  "last_updated": "2026-04-25T17:31:37.104770"
 }
