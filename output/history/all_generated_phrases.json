@@ -5729,7 +5729,37 @@
       "korean": "선택 너무 많아, 잘 골라.",
       "category": "Common Expressions",
       "generated_at": "2026-05-09T00:00:47.059445"
+    },
+    {
+      "english": "Order new dish, explore taste.",
+      "korean": "새로운 요리, 맛 탐험.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-09T03:30:59.471265"
+    },
+    {
+      "english": "Ask for recommendation, try chef's choice.",
+      "korean": "추천 받기, 셰프 선택.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-09T03:30:59.471273"
+    },
+    {
+      "english": "Request spiciness level, perfect heat.",
+      "korean": "맵기 조절, 완벽한 열.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-09T03:30:59.471274"
+    },
+    {
+      "english": "Share plate, share joy.",
+      "korean": "접시 나눠, 기쁨 나눠.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-09T03:30:59.471276"
+    },
+    {
+      "english": "Try bite, open new flavor.",
+      "korean": "한 입 시도, 새 맛 발견.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-09T03:30:59.471277"
     }
   ],
-  "last_updated": "2026-05-09T00:00:47.059447"
+  "last_updated": "2026-05-09T03:30:59.471278"
 }
