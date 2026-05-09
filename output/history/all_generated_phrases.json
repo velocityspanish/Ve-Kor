@@ -5759,7 +5759,37 @@
       "korean": "한 입 시도, 새 맛 발견.",
       "category": "Restaurant Korean",
       "generated_at": "2026-05-09T03:30:59.471277"
+    },
+    {
+      "english": "Inner voice guide you.",
+      "korean": "내면의 목소리, 따라가.",
+      "category": "Friendship",
+      "generated_at": "2026-05-09T14:42:03.377159"
+    },
+    {
+      "english": "You carry your sun.",
+      "korean": "너만의 태양, 품고 있어.",
+      "category": "Friendship",
+      "generated_at": "2026-05-09T14:42:03.377169"
+    },
+    {
+      "english": "Quiet strength grows.",
+      "korean": "고요한 힘, 자라나.",
+      "category": "Friendship",
+      "generated_at": "2026-05-09T14:42:03.377170"
+    },
+    {
+      "english": "Explore what makes you.",
+      "korean": "네 안을, 탐색해 봐.",
+      "category": "Friendship",
+      "generated_at": "2026-05-09T14:42:03.377171"
+    },
+    {
+      "english": "Trust your own compass.",
+      "korean": "자신의 나침반, 믿어.",
+      "category": "Friendship",
+      "generated_at": "2026-05-09T14:42:03.377172"
     }
   ],
-  "last_updated": "2026-05-09T03:30:59.471278"
+  "last_updated": "2026-05-09T14:42:03.377174"
 }
