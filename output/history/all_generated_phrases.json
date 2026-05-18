@@ -6659,7 +6659,37 @@
       "korean": "지식 나눔, 큰 기쁨.",
       "category": "Gratitude",
       "generated_at": "2026-05-18T00:02:36.831090"
+    },
+    {
+      "english": "Brain freeze soon, eat slower.",
+      "korean": "아이스크림.. 천천히.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-05-18T04:05:39.620548"
+    },
+    {
+      "english": "Lost, zoom out helper.",
+      "korean": "길 잃으면, 지도 봐요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-05-18T04:05:39.620558"
+    },
+    {
+      "english": "Sudden phone dying? Power low.",
+      "korean": "폰 꺼져? 배터리 적어.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-05-18T04:05:39.620560"
+    },
+    {
+      "english": "Choking feel? Heimlich action.",
+      "korean": "막혔어요? 허리 쳐!,",
+      "category": "Emergency Korean",
+      "generated_at": "2026-05-18T04:05:39.620561"
+    },
+    {
+      "english": "Fire starting? Get out fast.",
+      "korean": "불 났네? 빨리 탈출!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-05-18T04:05:39.620563"
     }
   ],
-  "last_updated": "2026-05-18T00:02:36.831092"
+  "last_updated": "2026-05-18T04:05:39.620564"
 }
