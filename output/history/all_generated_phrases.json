@@ -7139,7 +7139,37 @@
       "korean": "내려놔요, 부드럽게.",
       "category": "Balance",
       "generated_at": "2026-05-21T04:09:25.040789"
+    },
+    {
+      "english": "Just order, digest slow.",
+      "korean": "그냥 시켜, 천천히 소화.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-21T16:32:17.633794"
+    },
+    {
+      "english": "Spicy choice, feel courage.",
+      "korean": "매운 선택, 용기 느껴.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-21T16:32:17.633804"
+    },
+    {
+      "english": "Sharing food, connection grows.",
+      "korean": "음식 나눠, 마음 이어.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-21T16:32:17.633806"
+    },
+    {
+      "english": "Soup steams, worries fade.",
+      "korean": "국 끓여, 근심 가셔.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-21T16:32:17.633807"
+    },
+    {
+      "english": "Rice grains, each count.",
+      "korean": "밥알 셀 때, 의미 채워.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-05-21T16:32:17.633808"
     }
   ],
-  "last_updated": "2026-05-21T04:09:25.040790"
+  "last_updated": "2026-05-21T16:32:17.633810"
 }
