@@ -7259,7 +7259,37 @@
       "korean": "네 안의 풍경, 발견해.",
       "category": "Confidence",
       "generated_at": "2026-05-22T00:10:15.670897"
+    },
+    {
+      "english": "Forge ahead anyway.",
+      "korean": "그래도 나아가세요.",
+      "category": "Purpose",
+      "generated_at": "2026-05-22T04:04:06.807444"
+    },
+    {
+      "english": "Dare to learn.",
+      "korean": "배움을 감행하세요.",
+      "category": "Purpose",
+      "generated_at": "2026-05-22T04:04:06.807454"
+    },
+    {
+      "english": "Speak words aloud.",
+      "korean": "단어를 소리 내어.",
+      "category": "Purpose",
+      "generated_at": "2026-05-22T04:04:06.807456"
+    },
+    {
+      "english": "Listen closely, learner.",
+      "korean": "자세히 들으세요, 학습자.",
+      "category": "Purpose",
+      "generated_at": "2026-05-22T04:04:06.807457"
+    },
+    {
+      "english": "Embrace every sound.",
+      "korean": "모든 소리를 받아들여.",
+      "category": "Purpose",
+      "generated_at": "2026-05-22T04:04:06.807458"
     }
   ],
-  "last_updated": "2026-05-22T00:10:15.670899"
+  "last_updated": "2026-05-22T04:04:06.807460"
 }
