@@ -9719,7 +9719,37 @@
       "korean": "오늘 밤 특별해, 누리렴, 좋아.",
       "category": "Time Korean",
       "generated_at": "2026-06-07T17:58:56.964697"
+    },
+    {
+      "english": "Speak out loud, now.",
+      "korean": "소리 내요, 지금.",
+      "category": "Confidence",
+      "generated_at": "2026-06-07T21:00:39.822132"
+    },
+    {
+      "english": "Dare to say it.",
+      "korean": "말해 봐요, 용기.",
+      "category": "Confidence",
+      "generated_at": "2026-06-07T21:00:39.822141"
+    },
+    {
+      "english": "Try this word, today.",
+      "korean": "이 단어, 오늘.",
+      "category": "Confidence",
+      "generated_at": "2026-06-07T21:00:39.822143"
+    },
+    {
+      "english": "You understand, connect.",
+      "korean": "이해해요, 연결.",
+      "category": "Confidence",
+      "generated_at": "2026-06-07T21:00:39.822144"
+    },
+    {
+      "english": "Hear my success, happen.",
+      "korean": "내 성공, 들어.",
+      "category": "Confidence",
+      "generated_at": "2026-06-07T21:00:39.822145"
     }
   ],
-  "last_updated": "2026-06-07T17:58:56.964699"
+  "last_updated": "2026-06-07T21:00:39.822150"
 }
