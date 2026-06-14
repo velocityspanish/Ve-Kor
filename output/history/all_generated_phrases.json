@@ -10709,7 +10709,37 @@
       "korean": "불 났어요, 대피!",
       "category": "Emergency Korean",
       "generated_at": "2026-06-14T04:40:19.028995"
+    },
+    {
+      "english": "My mother, warm embrace.",
+      "korean": "엄마, 따뜻한 포옹.",
+      "category": "Family Terms",
+      "generated_at": "2026-06-14T15:31:13.282302"
+    },
+    {
+      "english": "Father, steady anchor.",
+      "korean": "아버지, 든든한 닻.",
+      "category": "Family Terms",
+      "generated_at": "2026-06-14T15:31:13.282310"
+    },
+    {
+      "english": "Elder sister. wisdom whispers.",
+      "korean": "언니, 지혜 속에.",
+      "category": "Family Terms",
+      "generated_at": "2026-06-14T15:31:13.282312"
+    },
+    {
+      "english": "Younger sister, bright laughter.",
+      "korean": "동생, 환한 웃음.",
+      "category": "Family Terms",
+      "generated_at": "2026-06-14T15:31:13.282313"
+    },
+    {
+      "english": "Brother, strong support",
+      "korean": "남동생, 든든함.",
+      "category": "Family Terms",
+      "generated_at": "2026-06-14T15:31:13.282314"
     }
   ],
-  "last_updated": "2026-06-14T04:40:19.028997"
+  "last_updated": "2026-06-14T15:31:13.282316"
 }
