@@ -10679,7 +10679,37 @@
       "korean": "단계를 보세요, Then 계단을.",
       "category": "Patience",
       "generated_at": "2026-06-14T00:14:42.703016"
+    },
+    {
+      "english": "Call help, fast!",
+      "korean": "도와줘요, 빨리!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-14T04:40:19.028981"
+    },
+    {
+      "english": "Danger here, run!",
+      "korean": "위험해요, 달려요!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-14T04:40:19.028992"
+    },
+    {
+      "english": "My hurt, doctor!",
+      "korean": "나 아파요, 의사!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-14T04:40:19.028993"
+    },
+    {
+      "english": "Need water drink.",
+      "korean": "물 좀 필요해요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-14T04:40:19.028994"
+    },
+    {
+      "english": "Fire here, escape!",
+      "korean": "불 났어요, 대피!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-14T04:40:19.028995"
     }
   ],
-  "last_updated": "2026-06-14T00:14:42.703018"
+  "last_updated": "2026-06-14T04:40:19.028997"
 }
