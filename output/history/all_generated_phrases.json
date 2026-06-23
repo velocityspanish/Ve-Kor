@@ -11999,7 +11999,37 @@
       "korean": "순간 속삭여요, 곧.",
       "category": "Time Korean",
       "generated_at": "2026-06-23T00:14:46.976282"
+    },
+    {
+      "english": "Understood that! Yes!",
+      "korean": "이해했어요! 네!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-23T03:56:51.490349"
+    },
+    {
+      "english": "Oh, you said that?",
+      "korean": "아, 그것을 말했구나?",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-23T03:56:51.490359"
+    },
+    {
+      "english": "Wait, me too!",
+      "korean": "잠깐, 나도야!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-23T03:56:51.490360"
+    },
+    {
+      "english": "Could you repeat that?",
+      "korean": "다시 말해 줄래요?",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-23T03:56:51.490361"
+    },
+    {
+      "english": "This tastes good!",
+      "korean": "이거 맛있는데요!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-23T03:56:51.490363"
     }
   ],
-  "last_updated": "2026-06-23T00:14:46.976287"
+  "last_updated": "2026-06-23T03:56:51.490364"
 }
