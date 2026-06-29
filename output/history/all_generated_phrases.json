@@ -12989,7 +12989,37 @@
       "korean": "익숙해져, 따르라, 번영.",
       "category": "Greetings",
       "generated_at": "2026-06-29T19:02:13.153001"
+    },
+    {
+      "english": "Savor the spices, slowly.",
+      "korean": "향신료 풍미, 천천히.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-06-29T21:16:30.678887"
+    },
+    {
+      "english": "Ask recommendations, boldly.",
+      "korean": "추천 메뉴, 대담하게.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-06-29T21:16:30.678896"
+    },
+    {
+      "english": "Share your plate, connect.",
+      "korean": "음식 공유, 소통해요.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-06-29T21:16:30.678898"
+    },
+    {
+      "english": "Try something new, please.",
+      "korean": "새로운 것, 시도해요.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-06-29T21:16:30.678899"
+    },
+    {
+      "english": "The aroma, a welcome.",
+      "korean": "그 향취, 환영해요.",
+      "category": "Restaurant Korean",
+      "generated_at": "2026-06-29T21:16:30.678900"
     }
   ],
-  "last_updated": "2026-06-29T19:02:13.153020"
+  "last_updated": "2026-06-29T21:16:30.678902"
 }
