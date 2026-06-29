@@ -12869,7 +12869,37 @@
       "korean": "해 저물어, 평화 내려와.",
       "category": "Time Korean",
       "generated_at": "2026-06-28T20:51:59.933081"
+    },
+    {
+      "english": "Need help now!",
+      "korean": "도움 필요해요, 바로!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-29T00:14:13.510731"
+    },
+    {
+      "english": "Run fast, okay?",
+      "korean": "빨리 뛰어, 알겠지?",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-29T00:14:13.510754"
+    },
+    {
+      "english": "Shout loud, emergency!",
+      "korean": "크게 외쳐, 비상!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-29T00:14:13.510756"
+    },
+    {
+      "english": "Stay calm, think!",
+      "korean": "침착해요, 생각하세요!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-29T00:14:13.510757"
+    },
+    {
+      "english": "Call police, please!",
+      "korean": "경찰 불러요, 제발!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-06-29T00:14:13.510759"
     }
   ],
-  "last_updated": "2026-06-28T20:51:59.933083"
+  "last_updated": "2026-06-29T00:14:13.510760"
 }
