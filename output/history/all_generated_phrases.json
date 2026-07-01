@@ -13199,7 +13199,37 @@
       "korean": "새 기술 피어나, 오늘.",
       "category": "Confidence",
       "generated_at": "2026-07-01T00:14:01.552205"
+    },
+    {
+      "english": "Just try speaking, okay?",
+      "korean": "그냥 말해, 알았지?",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-01T04:17:40.506757"
+    },
+    {
+      "english": "Don't worry, really.",
+      "korean": "걱정 마, 진짜.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-01T04:17:40.506769"
+    },
+    {
+      "english": "It starts inside you.",
+      "korean": "네 마음 에서 시작.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-01T04:17:40.506771"
+    },
+    {
+      "english": "Keep whispering the words.",
+      "korean": "단어 를 살며시.",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-01T04:17:40.506772"
+    },
+    {
+      "english": "Listen for the flow.",
+      "korean": "말의 흐름 을,",
+      "category": "Common Expressions",
+      "generated_at": "2026-07-01T04:17:40.506773"
     }
   ],
-  "last_updated": "2026-07-01T00:14:01.552207"
+  "last_updated": "2026-07-01T04:17:40.506775"
 }
