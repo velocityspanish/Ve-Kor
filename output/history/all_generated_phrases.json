@@ -13379,7 +13379,37 @@
       "korean": "바쁜 날 지나, 마음 평온.",
       "category": "Balance",
       "generated_at": "2026-07-02T03:57:06.467716"
+    },
+    {
+      "english": "Help me, please, now.",
+      "korean": "도와주세요, 간절히.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-02T15:58:10.856018"
+    },
+    {
+      "english": "Danger near, be calm.",
+      "korean": "위험 가까이, 침착.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-02T15:58:10.856027"
+    },
+    {
+      "english": "I am lost, world.",
+      "korean": "길 잃어요, 이 세상.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-02T15:58:10.856029"
+    },
+    {
+      "english": "Fire bright, escape home.",
+      "korean": "불 붉어, 집 피하세요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-02T15:58:10.856030"
+    },
+    {
+      "english": "Sick badly, medicine aid.",
+      "korean": "몹시 아파요, 약 주세요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-02T15:58:10.856031"
     }
   ],
-  "last_updated": "2026-07-02T03:57:06.467718"
+  "last_updated": "2026-07-02T15:58:10.856033"
 }
