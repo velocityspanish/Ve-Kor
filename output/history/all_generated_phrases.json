@@ -13409,7 +13409,37 @@
       "korean": "몹시 아파요, 약 주세요.",
       "category": "Emergency Korean",
       "generated_at": "2026-07-02T15:58:10.856031"
+    },
+    {
+      "english": "Right now, listen closely.",
+      "korean": "지금, 잘 듣고.",
+      "category": "Time Korean",
+      "generated_at": "2026-07-02T18:22:59.730158"
+    },
+    {
+      "english": "Your time, comes soon.",
+      "korean": "네 시간, 곧 와.",
+      "category": "Time Korean",
+      "generated_at": "2026-07-02T18:22:59.730170"
+    },
+    {
+      "english": "This moment we're in.",
+      "korean": "이 순간, 우리가.",
+      "category": "Time Korean",
+      "generated_at": "2026-07-02T18:22:59.730171"
+    },
+    {
+      "english": "Daily, little by, little things.",
+      "korean": "매일, 조금씩, 작은 것.",
+      "category": "Time Korean",
+      "generated_at": "2026-07-02T18:22:59.730172"
+    },
+    {
+      "english": "The future, begins, right now.",
+      "korean": "미래는, 시작돼, 바로 지금.",
+      "category": "Time Korean",
+      "generated_at": "2026-07-02T18:22:59.730173"
     }
   ],
-  "last_updated": "2026-07-02T15:58:10.856033"
+  "last_updated": "2026-07-02T18:22:59.730175"
 }
