@@ -13319,7 +13319,37 @@
       "korean": "언니/여동생, 좋은 친구.",
       "category": "Family Terms",
       "generated_at": "2026-07-01T21:17:36.302047"
+    },
+    {
+      "english": "Found a word, yes!",
+      "korean": "단어 찾았어요, 네!",
+      "category": "Joy",
+      "generated_at": "2026-07-02T00:15:26.207391"
+    },
+    {
+      "english": "A little better, good.",
+      "korean": "조금 더 나아졌어요, 좋아요.",
+      "category": "Joy",
+      "generated_at": "2026-07-02T00:15:26.207400"
+    },
+    {
+      "english": "Learned one phrase, nice.",
+      "korean": "한 문장 배웠어요, 좋아요.",
+      "category": "Joy",
+      "generated_at": "2026-07-02T00:15:26.207402"
+    },
+    {
+      "english": "Comprehension growing, right?",
+      "korean": "이해력 늘고 있어요, 맞죠?",
+      "category": "Joy",
+      "generated_at": "2026-07-02T00:15:26.207403"
+    },
+    {
+      "english": "Ordered food, success!",
+      "korean": "음식 주문했어요, 성공!",
+      "category": "Joy",
+      "generated_at": "2026-07-02T00:15:26.207404"
     }
   ],
-  "last_updated": "2026-07-01T21:17:36.302049"
+  "last_updated": "2026-07-02T00:15:26.207406"
 }
