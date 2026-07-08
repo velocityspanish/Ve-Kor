@@ -14219,7 +14219,37 @@
       "korean": "단어 잇고, 의미 만들어요.",
       "category": "Purpose",
       "generated_at": "2026-07-08T03:16:36.802792"
+    },
+    {
+      "english": "Lost your way? Moon guides now.",
+      "korean": "길 잃었니? 달이 안내할게.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-08T15:55:56.539369"
+    },
+    {
+      "english": "Storm hits, anchor deep still.",
+      "korean": "폭풍 와도, 뿌리 굳건.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-08T15:55:56.539385"
+    },
+    {
+      "english": "Cannot see, stars light path.",
+      "korean": "안 보이면, 별이 비춰.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-08T15:55:56.539387"
+    },
+    {
+      "english": "Falls down like rain, rise a spring.",
+      "korean": "비처럼 넘어져, 샘솟아 올라.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-08T15:55:56.539389"
+    },
+    {
+      "english": "Sudden freeze, remember the sun.",
+      "korean": "얼어붙어도, 태양 기억해.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-08T15:55:56.539390"
     }
   ],
-  "last_updated": "2026-07-08T03:16:36.802794"
+  "last_updated": "2026-07-08T15:55:56.539392"
 }
