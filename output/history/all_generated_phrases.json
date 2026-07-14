@@ -14819,7 +14819,37 @@
       "korean": "자신 알리라, 준비되면.",
       "category": "Patience",
       "generated_at": "2026-07-12T03:22:36.315255"
+    },
+    {
+      "english": "Ocean depth, holds calm.",
+      "korean": "바다 깊이, 고요 품네.",
+      "category": "Mindfulness",
+      "generated_at": "2026-07-14T05:24:47.124137"
+    },
+    {
+      "english": "River flow, keeps moving.",
+      "korean": "강물 흘러, 계속 가.",
+      "category": "Mindfulness",
+      "generated_at": "2026-07-14T05:24:47.124146"
+    },
+    {
+      "english": "Forest quiet, observe.",
+      "korean": "숲 소리 없이, 보아요.",
+      "category": "Mindfulness",
+      "generated_at": "2026-07-14T05:24:47.124148"
+    },
+    {
+      "english": "Star shines, in dark.",
+      "korean": "별빛 어둠, 빛나요.",
+      "category": "Mindfulness",
+      "generated_at": "2026-07-14T05:24:47.124149"
+    },
+    {
+      "english": "Cloud drifts, freely.",
+      "korean": "구름 떠다녀, 자유롭게.",
+      "category": "Mindfulness",
+      "generated_at": "2026-07-14T05:24:47.124150"
     }
   ],
-  "last_updated": "2026-07-12T03:22:36.315257"
+  "last_updated": "2026-07-14T05:24:47.124152"
 }
