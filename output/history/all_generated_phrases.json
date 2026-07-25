@@ -16349,7 +16349,37 @@
       "korean": "잘 듣고, 지혜 말해요.",
       "category": "Success",
       "generated_at": "2026-07-24T18:11:14.897975"
+    },
+    {
+      "english": "Speak Korean, unlock doors.",
+      "korean": "한국어 말해, 문 열어.",
+      "category": "Purpose",
+      "generated_at": "2026-07-25T14:53:55.397626"
+    },
+    {
+      "english": "Practice now, perfect later.",
+      "korean": "지금 연습, 나중에 완성.",
+      "category": "Purpose",
+      "generated_at": "2026-07-25T14:53:55.397637"
+    },
+    {
+      "english": "Listen keenly, absorb deeply.",
+      "korean": "잘 들어, 깊이 흡수해.",
+      "category": "Purpose",
+      "generated_at": "2026-07-25T14:53:55.397639"
+    },
+    {
+      "english": "Write words, build worlds.",
+      "korean": "단어 써, 세상 만들어.",
+      "category": "Purpose",
+      "generated_at": "2026-07-25T14:53:55.397640"
+    },
+    {
+      "english": "Connect through language, truly.",
+      "korean": "언어로 연결, 진정으로.",
+      "category": "Purpose",
+      "generated_at": "2026-07-25T14:53:55.397642"
     }
   ],
-  "last_updated": "2026-07-24T18:11:14.897977"
+  "last_updated": "2026-07-25T14:53:55.397643"
 }
