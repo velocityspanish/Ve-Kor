@@ -16829,7 +16829,37 @@
       "korean": "내면의 목소리, 더 또렷해져요.",
       "category": "Patience",
       "generated_at": "2026-07-29T18:01:54.592046"
+    },
+    {
+      "english": "Breathe easy, you're okay.",
+      "korean": "쉬어요, 괜찮아요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-29T20:42:23.131108"
+    },
+    {
+      "english": "This moment, passes.",
+      "korean": "이 순간, 지나가요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-29T20:42:23.131118"
+    },
+    {
+      "english": "Where is restroom?",
+      "korean": "화장실, 어디예요?",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-29T20:42:23.131120"
+    },
+    {
+      "english": "I am lost, friend.",
+      "korean": "길 잃었어요, 친구.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-29T20:42:23.131121"
+    },
+    {
+      "english": "Call police, now!",
+      "korean": "경찰 불러요, 지금!",
+      "category": "Emergency Korean",
+      "generated_at": "2026-07-29T20:42:23.131122"
     }
   ],
-  "last_updated": "2026-07-29T18:01:54.592048"
+  "last_updated": "2026-07-29T20:42:23.131124"
 }
