@@ -16889,7 +16889,37 @@
       "korean": "빈 마음, 찰 마음.",
       "category": "Balance",
       "generated_at": "2026-07-30T00:05:25.670618"
+    },
+    {
+      "english": "Speak softly, try it.",
+      "korean": "조용히 말해봐, 해봐.",
+      "category": "Purpose",
+      "generated_at": "2026-07-30T02:41:20.838405"
+    },
+    {
+      "english": "Connect words, feel it.",
+      "korean": "말 이어봐, 느껴봐.",
+      "category": "Purpose",
+      "generated_at": "2026-07-30T02:41:20.838418"
+    },
+    {
+      "english": "Repeat, remember it.",
+      "korean": "반복해, 기억해.",
+      "category": "Purpose",
+      "generated_at": "2026-07-30T02:41:20.838419"
+    },
+    {
+      "english": "Breathe deep, speak out.",
+      "korean": "심호흡하고, 말해 봐.",
+      "category": "Purpose",
+      "generated_at": "2026-07-30T02:41:20.838420"
+    },
+    {
+      "english": "Curiosity, opens doors.",
+      "korean": "호기심이, 문을 열어.",
+      "category": "Purpose",
+      "generated_at": "2026-07-30T02:41:20.838421"
     }
   ],
-  "last_updated": "2026-07-30T00:05:25.670620"
+  "last_updated": "2026-07-30T02:41:20.838423"
 }
