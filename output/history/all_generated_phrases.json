@@ -16859,7 +16859,37 @@
       "korean": "경찰 불러요, 지금!",
       "category": "Emergency Korean",
       "generated_at": "2026-07-29T20:42:23.131122"
+    },
+    {
+      "english": "Breath in, breath out.",
+      "korean": "숨 쉬어, 내쉬어.",
+      "category": "Balance",
+      "generated_at": "2026-07-30T00:05:25.670604"
+    },
+    {
+      "english": "Stillness, finds calm.",
+      "korean": "고요, 평온을 찾네.",
+      "category": "Balance",
+      "generated_at": "2026-07-30T00:05:25.670614"
+    },
+    {
+      "english": "Listen closely, silence speaks.",
+      "korean": "귀 기울여, 침묵이 말해.",
+      "category": "Balance",
+      "generated_at": "2026-07-30T00:05:25.670616"
+    },
+    {
+      "english": "Moonlight, on still water.",
+      "korean": "달빛, 잔잔한 물결 위에.",
+      "category": "Balance",
+      "generated_at": "2026-07-30T00:05:25.670617"
+    },
+    {
+      "english": "Empty mind, full heart.",
+      "korean": "빈 마음, 찰 마음.",
+      "category": "Balance",
+      "generated_at": "2026-07-30T00:05:25.670618"
     }
   ],
-  "last_updated": "2026-07-29T20:42:23.131124"
+  "last_updated": "2026-07-30T00:05:25.670620"
 }
