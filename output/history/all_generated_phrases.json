@@ -17069,7 +17069,37 @@
       "korean": "들어요. 그리고 말해요. 한국어.",
       "category": "Greetings",
       "generated_at": "2026-07-31T15:52:33.099873"
+    },
+    {
+      "english": "Seed sprouts, new life grows.",
+      "korean": "씨앗 틔우니, 새 생명 자라.",
+      "category": "Growth",
+      "generated_at": "2026-07-31T18:16:09.178940"
+    },
+    {
+      "english": "River flows, reaches ocean.",
+      "korean": "강물 흐르니, 바다 닿아요.",
+      "category": "Growth",
+      "generated_at": "2026-07-31T18:16:09.178951"
+    },
+    {
+      "english": "Sun climbs, day dawns.",
+      "korean": "해 솟으니, 아침 열려.",
+      "category": "Growth",
+      "generated_at": "2026-07-31T18:16:09.178953"
+    },
+    {
+      "english": "Mountain stands, wind whispers.",
+      "korean": "산 서니, 바람 스칩니다.",
+      "category": "Growth",
+      "generated_at": "2026-07-31T18:16:09.178954"
+    },
+    {
+      "english": "Rain falls, earth drinks.",
+      "korean": "비 내리니, 땅 마셔요.",
+      "category": "Growth",
+      "generated_at": "2026-07-31T18:16:09.178956"
     }
   ],
-  "last_updated": "2026-07-31T15:52:33.099876"
+  "last_updated": "2026-07-31T18:16:09.178958"
 }
