@@ -17339,7 +17339,37 @@
       "korean": "달빛 인도, 부드럽게.",
       "category": "Hope",
       "generated_at": "2026-08-02T03:22:49.832685"
+    },
+    {
+      "english": "Lost signal? Breathe deep.",
+      "korean": "신호 끊겼어요? 심호흡.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-08-02T14:53:03.502008"
+    },
+    {
+      "english": "Need help? Ask quickly.",
+      "korean": "도움 필요? 빨리 물어요.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-08-02T14:53:03.502020"
+    },
+    {
+      "english": "Wrong turn? New view.",
+      "korean": "길 잘못? 새 풍경.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-08-02T14:53:03.502022"
+    },
+    {
+      "english": "Phone dead? Look up.",
+      "korean": "폰 꺼졌어? 올려봐.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-08-02T14:53:03.502024"
+    },
+    {
+      "english": "Feeling stuck? Shift focus.",
+      "korean": "막혔어? 시선 돌려.",
+      "category": "Emergency Korean",
+      "generated_at": "2026-08-02T14:53:03.502025"
     }
   ],
-  "last_updated": "2026-08-02T03:22:49.832687"
+  "last_updated": "2026-08-02T14:53:03.502026"
 }
