@@ -124,9 +124,28 @@ jobs:
           echo "📁 Generated files:"
           ls -la output/video/ || echo "No video directory yet"
 
+      - name: 📎 Host video for Threads (raw GitHub URL)
+        run: |
+          VIDEO=$(ls output/video/*/final_reel.mp4 2>/dev/null | head -n1)
+          if [ -n "$VIDEO" ]; then
+            git clone --quiet --single-branch --branch main "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" /tmp/threads_host
+            cp "$VIDEO" /tmp/threads_host/video.mp4
+            cd /tmp/threads_host
+            git checkout --orphan threads-video-branch -q 2>/dev/null || git checkout threads-video-branch -q
+            git rm -rf . -q 2>/dev/null || true
+            git add video.mp4
+            git -c user.email="github-actions[bot]@users.noreply.github.com" -c user.name="github-actions[bot]" commit -q -m "Update Threads video - Run #${{ github.run_number }}"
+            git push origin threads-video-branch --force -q
+            echo "THREADS_VIDEO_URL=https://raw.githubusercontent.com/${{ github.repository }}/threads-video-branch/video.mp4" >> $GITHUB_ENV
+            echo "✅ Threads video hosted: raw.githubusercontent.com/${{ github.repository }}/threads-video-branch/video.mp4"
+          else
+            echo "⚠️ No video found - skipping Threads hosting"
+          fi
+
       - name: 📤 Upload to All Social Media Platforms
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THREADS_VIDEO_URL: ${{ env.THREADS_VIDEO_URL }}
         run: |
           echo "🚀 Starting multi-platform upload..."
           export PYTHONPATH="${{ github.workspace }}:${{ github.workspace }}/upload:$PYTHONPATH"

@@ -58,56 +58,65 @@ def upload_to_threads(video_path, text):
     print(f"[threads] Text length: {len(text_limited)} characters")
     
     try:
-        # Step 1: Upload to temporary hosting (file.io for reliability)
-        print(f"[threads] 📤 Step 1: Uploading to temporary hosting...")
-        
-        video_url = None
-        
-        # Primary method: file.io
-        try:
-            print("[threads] Uploading to file.io...")
-            with open(video_path_obj, 'rb') as video_file:
-                files = {'file': video_file}
-                # Set expiry to 1 day to be safe, auto-delete is default on download
-                response = requests.post('https://file.io/?expires=1d', files=files, timeout=60)
-                
-            if response.status_code == 200:
-                data = response.json()
-                if data.get('success'):
-                    video_url = data.get('link')
-                    print(f"[threads] ✅ Uploaded to file.io: {video_url}")
-                else:
-                    print(f"[threads] ⚠️ file.io error: {data}")
-            else:
-                print(f"[threads] ⚠️ file.io failed with status {response.status_code}")
-        except Exception as e:
-            print(f"[threads] ⚠️ file.io exception: {e}")
+        # Step 1: Prepare video URL (prefer workflow-provided GitHub raw URL)
+        print(f"[threads] 📤 Step 1: Preparing video URL...")
 
-        # Fallback: tmpfiles.org
-        if not video_url:
-            print("[threads] ⚠️ Trying fallback to tmpfiles.org...")
+        video_url = os.getenv('THREADS_VIDEO_URL', '').strip()
+        if video_url.startswith('http'):
+            print(f"[threads] ✅ Using workflow-provided GitHub raw URL: {video_url}")
+        else:
+            # Upload to temporary hosting (catbox.moe returns raw bytes)
+            print(f"[threads] 📤 Uploading to temporary hosting...")
+
+            # Primary method: catbox.moe (returns direct raw file URL, required by Threads)
             try:
+                print("[threads] Uploading to catbox.moe...")
                 with open(video_path_obj, 'rb') as video_file:
-                    files = {'file': ('video.mp4', video_file, 'video/mp4')}
-                    temp_response = requests.post(
-                        'https://tmpfiles.org/api/v1/upload',
+                    files = {'fileToUpload': ('video.mp4', video_file, 'video/mp4')}
+                    catbox_response = requests.post(
+                        'https://catbox.moe/user/api.php',
+                        data={'reqtype': 'fileupload'},
                         files=files,
                         timeout=180
                     )
-                
-                if temp_response.status_code == 200:
-                    temp_data = temp_response.json()
-                    temp_url = temp_data.get('data', {}).get('url', '')
-                    if temp_url:
-                        video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/').replace('http://', 'https://')
-                        print(f"[threads] ✅ Uploaded to tmpfiles.org: {video_url}")
-            except Exception as e:
-                 print(f"[threads] ⚠️ tmpfiles.org exception: {e}")
 
-        if not video_url:
-             raise Exception("All hosting attempts failed (file.io and tmpfiles.org)")
-            
-        print(f"[threads] ✅ Temporary URL ready: {video_url}")
+                if catbox_response.status_code == 200:
+                    catbox_url = catbox_response.text.strip()
+                    if catbox_url.startswith('http'):
+                        video_url = catbox_url
+                        print(f"[threads] ✅ Uploaded to catbox.moe: {video_url}")
+                    else:
+                        print(f"[threads] ⚠️ catbox.moe error: {catbox_url}")
+                else:
+                    print(f"[threads] ⚠️ catbox.moe failed with status {catbox_response.status_code}")
+            except Exception as e:
+                print(f"[threads] ⚠️ catbox.moe exception: {e}")
+
+            # Fallback: tmpfiles.org
+            if not video_url:
+                print("[threads] ⚠️ Trying fallback to tmpfiles.org...")
+                try:
+                    with open(video_path_obj, 'rb') as video_file:
+                        files = {'file': ('video.mp4', video_file, 'video/mp4')}
+                        temp_response = requests.post(
+                            'https://tmpfiles.org/api/v1/upload',
+                            files=files,
+                            timeout=180
+                        )
+
+                    if temp_response.status_code == 200:
+                        temp_data = temp_response.json()
+                        temp_url = temp_data.get('data', {}).get('url', '')
+                        if temp_url:
+                            video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/').replace('http://', 'https://')
+                            print(f"[threads] ✅ Uploaded to tmpfiles.org: {video_url}")
+                except Exception as e:
+                    print(f"[threads] ⚠️ tmpfiles.org exception: {e}")
+
+            if not video_url:
+                raise Exception("All hosting attempts failed (catbox.moe and tmpfiles.org)")
+
+            print(f"[threads] ✅ Temporary URL ready: {video_url}")
         
         # Step 2: Create Threads container with video URL
         print(f"[threads] 📦 Step 2: Creating Threads container...")
@@ -160,58 +169,42 @@ def upload_to_threads(video_path, text):
             print(f"[threads] ❌ {error_msg}")
             raise Exception(error_msg)
         
-        # Step 3: Wait for processing
-        print(f"[threads] ⏳ Step 3: Waiting for video processing...")
-        max_wait = 120
-        waited = 0
-        
-        while waited < max_wait:
-            status_url = f"https://graph.threads.net/v1.0/{container_id}"
-            status_params = {
-                'fields': 'status',
-                'access_token': access_token
-            }
-            
-            status_response = requests.get(status_url, params=status_params, timeout=30)
-            status_data = status_response.json()
-            status = status_data.get('status', 'UNKNOWN')
-            
-            print(f"[threads] Status: {status} (waited {waited}s)")
-            
-            if status == 'FINISHED':
-                print(f"[threads] ✅ Video processing complete!")
-                break
-            elif status == 'ERROR':
-                error_msg = status_data.get('error_message', 'Video processing failed')
-                print(f"[threads] ❌ {error_msg}")
-                raise Exception(error_msg)
-            
-            time.sleep(10)
-            waited += 10
-        
-        if waited >= max_wait:
-            error_msg = "Video processing timed out"
-            print(f"[threads] ❌ {error_msg}")
-            raise Exception(error_msg)
-        
-        # Step 4: Publish
-        print(f"[threads] 📤 Step 4: Publishing to Threads...")
+        # Step 3: Publish with sleep-and-retry (no status polling)
+        print(f"[threads] ⏳ Step 3: Publishing to Threads...")
         publish_url = f"https://graph.threads.net/v1.0/{user_id}/threads_publish"
         publish_params = {
             'creation_id': container_id,
             'access_token': access_token
         }
-        
-        publish_response = requests.post(publish_url, params=publish_params, timeout=60)
-        
+
+        max_wait = 180
+        waited = 0
+        publish_response = None
+
+        while waited < max_wait:
+            print(f"[threads] Publishing media (waited {waited}s)...")
+            publish_response = requests.post(publish_url, params=publish_params, timeout=60)
+
+            if publish_response.status_code == 200:
+                break
+
+            err_msg = ""
+            try: err_msg = publish_response.json().get('error', {}).get('message', '')
+            except: pass
+            if waited >= max_wait:
+                raise Exception(f"Publish failed after {max_wait}s: {err_msg or publish_response.text}")
+            print(f"[threads] Not ready yet ({err_msg or publish_response.status_code}), retrying in 45s...")
+            time.sleep(45)
+            waited += 45
+
         if publish_response.status_code != 200:
             error_data = publish_response.json() if publish_response.text else {}
             error_msg = error_data.get('error', {}).get('message', 'Unknown error')
             print(f"[threads] ❌ Publish failed: {error_msg}")
             raise Exception(f"Threads Publish Error: {error_msg}")
-        
+
         thread_id = publish_response.json().get('id')
-        
+
         print(f"[threads] ✅ SUCCESS! Video published to Threads!")
         print(f"[threads] Thread ID: {thread_id}")
         print(f"[threads] Check your Threads profile to see the post!")
@@ -220,7 +213,8 @@ def upload_to_threads(video_path, text):
         return {
             'id': thread_id,
             'platform': 'threads',
-            'status': 'success'
+            'status': 'success',
+            'wait_s': waited
         }
         
     except Exception as e:
